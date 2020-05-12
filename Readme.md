@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [nurzhan kydyralieva](https://up.htmlacademy.ru/htmlcss/28/user/1339991).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Иовлев](https://up.htmlacademy.ru/htmlcss/28/user/200490).
 
 ---
 
