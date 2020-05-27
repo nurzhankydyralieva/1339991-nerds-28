@@ -25,9 +25,9 @@
   </header>
 
   <main>
-    <h1>Нёрдс</h1>
+    <h1 class="visually-hidden">Нёрдс</h1>
     <section>
-      <h2>Преимущества</h2>
+      <h2 class="visually-hidden">Преимущества</h2>
       <ul>
         <li>
           <p>Долго, дорого, скрупулезно.</p>
@@ -103,6 +103,17 @@
       <a href="#">Напишите нам</a>
       <img src="img/map-marker1.png" width="231" height="190" alt="Nerds">
       <a href="Googlemap.html">Карта</a>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <label for="name">Ваше имя:</label>
+        <input id="name" type="text" name="name" placeholder="Имя Фамилия" value="Имя Фамилия" required>
+
+        <label for="email">Ваш email:</label>
+        <input id="email" type="text" name="name" placeholder="email" value="email@example.com" required>
+
+        <label for="comment-field">Текст письма:</label>
+        <textarea name="comment" id="comment-field" rows="5">В свободной форме</textarea>
+        <input type="submit" value="Отправить">
+      </form>
     </section>
   </main>
   <footer>
