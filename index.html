@@ -4,8 +4,6 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/normalize.css">
 </head>
 
 <body>
@@ -48,6 +46,11 @@
           <img src="img/nerds-index-slide31.png" width="760" height="430" alt="Слайдер с телефоном и ipad">
         </li>
       </ul>
+      <div>
+        <button type="button">1</button>
+        <button type="button">2</button>
+        <button type="button">3</button>
+      </div>
     </section>
 
     <section>
@@ -105,11 +108,13 @@
       <a href="Googlemap.html">Карта</a>
       <form action="https://echo.htmlacademy.ru" method="post">
         <label for="name">Ваше имя:</label>
-        <input id="name" type="text" name="fullName" placeholder="Имя Фамилия" required>
-        <label for="name">Ваш email:</label>
-        <input type="email" id="email" placeholder="email@example.com" required>
+        <input type="text" name="fullName" id="name" placeholder="Имя Фамилия" required>
+
+        <label for="email">Ваш email:</label>
+        <input type="email" name="email" id="email" placeholder="email@example.com" required>
+
         <label for="comment-field">Текст письма:</label>
-        <textarea name="comment" id="comment-field" rows="5">В свободной форме</textarea>
+        <textarea name="comment" id="comment-field" rows="5" placeholder="В свободной форме"></textarea>
         <input type="submit" value="Отправить">
       </form>
     </section>
