@@ -4,27 +4,37 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-  <header>
-    <nav>
-      <a href="index.html">
+<body class="page-body catalog-page">
+  <header class="main-header">
+    <nav class="main-navigation">
+      <a class="main-header-logo">
         <img src="img/nerds-logo.svg " width="160" height="65" alt="Логотип Нердс">
       </a>
-      <ul>
-        <li><a href="#">Студия</a></li>
-        <li><a href="#">Клиенты</a></li>
-        <li><a href="catalog.html">Магазин</a></li>
-        <li><a href="#">Контакты</a></li>
-        <li><a href="#">Корзина</a></li>
-      </ul>
+      <div class="main-navigation-wrapper">
+        <div class="container">
+          <ul class="site-navigation">
+            <li><a href="#">Студия</a></li>
+            <li><a href="#">Клиенты</a></li>
+            <li><a href="catalog.html">Магазин</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+          <div class="user-basket">
+            <a href="#">Корзина</a>
+          </div>
+        </div>
+      </div>
     </nav>
-    <h1>Магазин готовых шаблонов</h1>
+    <h1 class="page-title">Магазин готовых шаблонов</h1>
   </header>
 
   <main>
-    <section>
+    <section class="filter">
       <h2 class="visually-hidden">Фильтр</h2>
       <form action="https://echo.htmlacademy.ru" method="get">
         <fieldset>
@@ -45,7 +55,7 @@
 
         <fieldset>
           <legend>Сетка:</legend>
-          <ul>
+          <ul class="breadcrumbs">
             <li>
               <label for="adaptive">Адаптивная</label>
               <input type="radio" name="grid" value="adaptive" id="adaptive" checked>
@@ -62,7 +72,7 @@
         </fieldset>
         <fieldset>
           <legend>Особенности:</legend>
-          <ul>
+          <ul class="breadcrumbs-field">
             <li>
               <label for="slider-field">Слайдер</label>
               <input type="checkbox" name="slider" id="slider-field" checked>
@@ -163,21 +173,22 @@
       </ul>
     </section>
 
-    <footer>
-      <ul>
-        <li>
+    <footer class="page-footer main-footer">
+      <ul class="social-button">
+        <li class="button-vk">
           <a href="#"><span class="visually-hidden">Вконтакте</span></a>
         </li>
-        <li>
+        <li class="button-fb">
           <a href="#"><span class="visually-hidden">Фейсбук</span></a>
         </li>
-        <li>
+        <li class="button-insta">
           <a href="#"><span class="visually-hidden">Инстаграм</span></a>
         </li>
       </ul>
-      <section>
+
+      <section class="modal">
         <h2>Давайте дружить, это выгодно!</h2>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
+        <p>Скидка 10% для друзей из социальных сетей. </p>
       </section>
     </footer>
   </main>

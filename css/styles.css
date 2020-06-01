@@ -1,0 +1,230 @@
+:root {
+  --basic-black: #000000;
+  --basic-grey: #A6A6A6;
+  --basic-extra-grey: #D5D5D5;
+  --basic-light-grey: #EEEEEE;
+  --basic-dark-grey: #DFDFDF;
+  --basic-dimgrey: #4D4D4D;
+  --basic-darkslategrey: #283136;
+  --basic-white: #ffffff;
+  --basic-red: #FB565A;
+  --basic-red-dark: #E74246;
+  --basic-extra-red: #D7373B;
+  --basic-green: #00BC6C;
+  --basic-light-green: #00CA74;
+  --basic-dark-green: #00AA62;
+  --basic-yellow: #EAB534;
+  --basic-light-yellow: #EFC84A;
+  --basic-dark-yellow: #E5A722;
+}
+
+body {
+  min-width: 1440px;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  background-image: url("../img/svg/png");
+  background-position: top center;
+  background-repeat: no-repeat;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main-navigation {
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--basic-black);
+  background-color: var(--basic-light-grey);
+}
+
+.main-navigation-wrapper {
+  background-color: var(--basic-light-grey);
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.main-header-logo a:not([href]) {
+  background-color: var(--basic-light-grey);
+}
+
+.site-navigation a,
+.user-basket a {
+  color: var(--basic-black);
+}
+
+.site-navigation a:hover,
+.user-basket a:hover {
+  color: var(--basic-red);
+}
+
+.site-navigation a:focus,
+.user-basket a:focus {
+  color: var(--basic-black);
+}
+
+
+.services {
+  list-style: none;
+}
+
+.service-item {
+  text-align: center;
+}
+
+.service-item img {
+  position: absolute;
+  width: 300px;
+  height: 146px;
+}
+
+.service-item h3 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.service-item p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.service-item-1 {
+  position: absolute;
+  width: 160px;
+  height: 50px;
+  background-color: var(--basic-red);
+  color: var(--basic-white);
+  border-radius: 3px;
+}
+
+.service-item-1 a:hover {
+  background-color: var(--basic-red-dark);
+}
+
+.service-item-1 a:focus {
+  background-color: var(--basic-extra-red);
+}
+
+.service-item-2 {
+  position: absolute;
+  width: 160px;
+  height: 50px;
+  background-color: var(--basic-light-green);
+  color: var(--basic-white);
+  border-radius: 3px;
+}
+
+.service-item-2 a:hover {
+  background-color: var(--basic-green);
+}
+
+.service-item-2 a:focus {
+  background-color: var(--basic-dark-green);
+}
+
+.service-item-3 {
+  position: absolute;
+  width: 160px;
+  height: 50px;
+  background-color: var(--basic-light-yellow);
+  color: var(--basic-white);
+  border-radius: 3px;
+}
+
+.service-item-3 a:hover {
+  background-color: var(--basic-yellow);
+}
+
+.service-item-3 a:focus {
+  background-color: var(--basic-dark-yellow);
+}
+
+.main-footer {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.social-button {
+  text-align: left;
+  list-style: none;
+}
+
+.button-vk,
+.button-fb,
+.button-insta {
+  background-color: var(--basic-light-grey);
+}
+
+.social-button:hover {
+  background-color: var(--basic-red-dark);
+}
+
+.social-button:focus {
+  background-color: var(--basic-extra-red);
+}
+
+/*catalog*/
+.catalog-page .main-header {
+  background-color: var(--basic-white);
+}
+
+.page-title h1 {
+  color: var(--basic-black);
+  font-style: normal;
+  font-weight: 500px;
+  font-size: 55px;
+}
+
+.catalog-page {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  background-image: url("../img/");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.breadcrumbs {
+  color: var(--basic-darkslategrey);
+}
+
+.breadcrumbs-field {
+  color: var(--basic-darkslategrey);
+}
+
+.filter legend {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.filter ul {
+  list-style: none;
+  line-height: 19px;
+}
+
+.filter-input-radio:hover+label,
+.filter-input-radio:focus+label {
+  color: var(--basic-black);
+}
+
+.filter-input-checkbox:hover+label,
+.filter-input-checkbox:focus+label {
+  color: var(--basic-black);
+}
