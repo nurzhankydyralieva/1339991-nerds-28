@@ -1,5 +1,12 @@
 .visually-hidden {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
 }
 
 :root {
@@ -34,7 +41,6 @@ body {
   line-height: 24px;
   color: var(--basic-darkslategrey);
   background-color: var(--basic-white);
-  background-image: url("../img/nerds-logo.svg");
   background-position: top center;
   background-repeat: no-repeat;
 
@@ -172,49 +178,8 @@ img {
   background-color: var(--basic-dark-yellow);
 }
 
-.main-footer {
-  color: var(--basic-black);
-  background-color: var(--basic-white);
-  background-position: 0 0;
-  background-repeat: no-repeat;
-}
 
-.social-button {
-  text-align: left;
-  list-style: none;
-}
 
-.button-vk {
-  color: var(--basic-white);
-  background-color: var(--basic-light-grey);
-  background-image: url("../img/vk-icon.svg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
-}
-
-.button-fb {
-  color: var(--basic-white);
-  background-color: var(--basic-light-grey);
-  background-image: url("../img/fb-icon.svg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
-}
-
-.button-insta {
-  color: var(--basic-white);
-  background-color: var(--basic-light-grey);
-  background-image: url("../img/insta-icon.svg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
-}
-
-.social-button:hover {
-  background-color: var(--basic-red-dark);
-}
-
-.social-button:focus {
-  background-color: var(--basic-extra-red);
-}
 
 /*catalog*/
 .catalog-page .main-header {
@@ -293,15 +258,87 @@ img {
   opacity: rgba (0, 0, 0, 0.3);
 }
 
-.modal {
+/*main-footer */
+.main-footer {
   color: var(--basic-black);
+  background-color: var(--basic-white);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.social-list ul {
+  list-style: none;
+}
+
+.social-item {
+  display: inline-block;
+  width: 81px;
+  height: 81px;
+  left: 140px;
+  top: 2327px;
+  background-color: var(--basic-light-grey);
+  border-radius: 50%;
+
+}
+
+.social-item:hover {
+  display: inline-block;
+  width: 81px;
+  height: 81px;
+  left: 140px;
+  top: 2327px;
+  background-color: var(--basic-red-dark);
+  border-radius: 50%;
+}
+
+.social-item:active {
+  display: inline-block;
+  width: 81px;
+  height: 81px;
+  left: 140px;
+  top: 2327px;
+  background-color: var(--basic-extra-red);
+  border-radius: 50%;
+}
+
+.social-item .social-link-vk {
+  background-image: url("../img/vk-icon.svg");
+  background-repeat: no-repeat;
+  width: 26px;
+  height: 15px;
+  left: 167px;
+  top: 2360px;
+}
+
+.social-link .social-link-fb {
+  background-image: url("../img/fb-icon.svg");
+  background-repeat: no-repeat;
+  width: 12px;
+  height: 22px;
+  left: 265px;
+  top: 2358px;
+}
+
+.social-link .social-link-inst {
+  background-image: url("../img/insta-icon.svg");
+  background-repeat: no-repeat;
+  width: 21px;
+  height: 21px;
+  left: 350px;
+  top: 2357px;
+}
+
+.advertisement h2 {
+  color: var(--basic-black);
+  font-style: normal;
   font-weight: bold;
   font-size: 36px;
   line-height: 36px;
 }
 
-.modal p {
+.advertisement p {
   color: var(--basic-silver-grey);
+  font-weight: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
