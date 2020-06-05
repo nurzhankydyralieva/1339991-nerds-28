@@ -274,58 +274,39 @@ img {
   display: inline-block;
   width: 81px;
   height: 81px;
-  left: 140px;
-  top: 2327px;
   background-color: var(--basic-light-grey);
   border-radius: 50%;
 
 }
 
 .social-item:hover {
-  display: inline-block;
-  width: 81px;
-  height: 81px;
-  left: 140px;
-  top: 2327px;
   background-color: var(--basic-red-dark);
-  border-radius: 50%;
 }
 
 .social-item:active {
-  display: inline-block;
-  width: 81px;
-  height: 81px;
-  left: 140px;
-  top: 2327px;
   background-color: var(--basic-extra-red);
-  border-radius: 50%;
 }
 
-.social-item .social-link-vk {
-  background-image: url("../img/vk-icon.svg");
+.social-link {
   background-repeat: no-repeat;
+}
+
+.social-link .social-link-vk {
+  background-image: url("../img/vk-icon.svg");
   width: 26px;
   height: 15px;
-  left: 167px;
-  top: 2360px;
 }
 
 .social-link .social-link-fb {
   background-image: url("../img/fb-icon.svg");
-  background-repeat: no-repeat;
   width: 12px;
   height: 22px;
-  left: 265px;
-  top: 2358px;
 }
 
 .social-link .social-link-inst {
   background-image: url("../img/insta-icon.svg");
-  background-repeat: no-repeat;
   width: 21px;
   height: 21px;
-  left: 350px;
-  top: 2357px;
 }
 
 .advertisement h2 {
