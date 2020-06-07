@@ -32,6 +32,7 @@
   --basic-grey-contact: #666666;
   --basic-grey-active: #DBDBDB;
   --basic-black-button: #231F20;
+  --basic-grey-link: #E1E1E1;
 }
 
 body {
@@ -588,34 +589,35 @@ img {
   height: 81px;
   background-color: var(--basic-light-grey);
   border-radius: 50%;
-
-}
-
-.social-item:hover {
-  background-color: var(--basic-red-dark);
-}
-
-.social-item:active {
-  background-color: var(--basic-extra-red);
 }
 
 .social-link {
+  display: block;
   background-repeat: no-repeat;
+  background-color: var(--basic-grey-link);
 }
 
-.social-link .social-link-vk {
+.social-link:hover {
+  background-color: var(--basic-red-dark);
+}
+
+.social-link:active {
+  background-color: var(--basic-extra-red);
+}
+
+.social-link-vk {
   background-image: url("../img/vk-icon.svg");
   width: 26px;
   height: 15px;
 }
 
-.social-link .social-link-fb {
+.social-link-fb {
   background-image: url("../img/fb-icon.svg");
   width: 12px;
   height: 22px;
 }
 
-.social-link .social-link-inst {
+.social-link-inst {
   background-image: url("../img/insta-icon.svg");
   width: 21px;
   height: 21px;
