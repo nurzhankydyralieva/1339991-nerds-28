@@ -37,26 +37,32 @@
     <section>
       <h2 class="visually-hidden">Преимущества</h2>
       <ul class="feature-slider">
-        <li class="feature-list">
-          <p class="feature-item">Долго, дорого, скрупулезно.</p>
-          <p class="feature-item-item">Математически выверенный дизайн <br> для вашего сайта или мобильного приложения
+        <li class="feature-item">
+          <p class="feature-title">Долго, дорого, скрупулезно.</p>
+          <p class="feature-text">Математически выверенный дизайн <br> для вашего сайта или мобильного приложения
           </p>
           <a class="find-out" href="#">Узнать больше</a>
-          <img src="img/nerds-index-slide11.png" width="760" height="430" alt="Слайдер с телефоном">
+          <span class="first-slider">
+            <img src="img/nerds-index-slide11.png" width="760" height="430" alt="Слайдер с телефоном">
+          </span>
         </li>
-        <li class="feature-list">
-          <p class="feature-item">Любим математику <br>как никто другой</p>
-          <p class="feature-item-item">Никакого креатива, только математические формулы<br> для расчета идеальных
+        <li class="feature-item-text">
+          <p class="feature-title">Любим математику <br>как никто другой</p>
+          <p class="feature-text">Никакого креатива, только математические формулы<br> для расчета идеальных
             пропорций</p>
           <a class="find-out" href="#">Узнать больше</a>
-          <img src="img/nerds-index-slide21.png" width="760" height="430" alt="Слайдер с компьютер">
+          <span class="second-slider">
+            <img src="img/nerds-index-slide21.png" width="760" height="430" alt="Слайдер с компьютер">
+          </span>
         </li>
-        <li class="feature-list">
-          <p class="feature-item">Только ночь,<br>только хардкор</p>
-          <p class="feature-item-item">Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только
+        <li class="feature-item-text">
+          <p class="feature-title">Только ночь,<br>только хардкор</p>
+          <p class="feature-text">Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только
             начинается.</p>
           <a class="find-out" href="#">Узнать больше</a>
-          <img src="img/nerds-index-slide31.png" width="760" height="430" alt="Слайдер с телефоном и ipad">
+          <span class="third-slider">
+            <img src="img/nerds-index-slide31.png" width="760" height="430" alt="Слайдер с телефоном и ipad">
+          </span>
         </li>
       </ul>
       <div class="slider-buttons">
@@ -68,20 +74,20 @@
 
     <section class="services">
       <h2>Наши услуги</h2>
-      <ul class="service-item">
-        <li class="service-item-1">
+      <ul class="service-list">
+        <li class="service-item-cite">
           <img src="img/illustration-11.png " width="300" height="146" alt="Веб-сайты">
           <h3>Веб-сайты</h3>
           <p>Мир никогда не будет преждним после того как увидит ван сайт!</p>
           <a href="#">Заказать</a>
         </li>
-        <li class="service-item-2">
+        <li class="service-item-app">
           <img src="img/illustration-21.png" width="300" height="146" alt="Приложения">
           <h3>Приложения</h3>
           <p>Покорите топ-10 приложений в AppStore и Google Play</p>
           <a href="#">Заказать</a>
         </li>
-        <li class="service-item-3">
+        <li class="service-item-presentation">
           <img src="img/illustration-31.png" width="300" height="146" alt="Презентации">
           <h3>Презентации</h3>
           <p>Вы даже не подозреваете, насколько вы изумительны!</p>
@@ -91,18 +97,18 @@
     </section>
     <section class="slogan">
       <h3 class="visually-hidden">Слоган</h3>
-      <p class="slogan-caption">Мы - маленькая, но гордая<br> дизайн-студия из Краснодара.</p>
-      <p class="slogan-caption-1">Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br>превыше
+      <p class="slogan-text">Мы - маленькая, но гордая<br> дизайн-студия из Краснодара.</p>
+      <p class="slogan-description">Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br>превыше
         креатива. Работаем не
         покладая рук, как роботы.</p>
-      <h3 class="slogan-caption-2">Выполняем заказы на разработку:</h3>
-      <ul class="slogan-caption-1">
+      <h3 class="slogan-info">Выполняем заказы на разработку:</h3>
+      <ul class="slogan-description">
         <li>Веб-сайтов любой сложности</li>
         <li>Мобильных приложений для iOS и Android</li>
         <li>Слайдшоу и видео корпоративных презентаций</li>
       </ul>
       <img src="img/nerds-illustration-logo.png" width="360" height="208" alt="Дата основания">
-      <p class="slogan-caption-2">С 2004 года любим точность во всем:</p>
+      <p class="slogan-info">С 2004 года любим точность во всем:</p>
       <dl class="table">
         <dt>Уровень самоотдачи</dt>
         <dd>146%</dd>
@@ -111,10 +117,12 @@
         <dt>Минимальная предоплата</dt>
         <dd>50%</dd>
       </dl>
-      <a class="logo-academy" href="#">html academy</a>
-      <a class="logo-borodinski" href="#">Borodinski</a>
-      <a class="logo-pink" href="#">Pink</a>
-      <a class="logo-mishka" href="#">Mishka</a>
+      <div class="logos">
+        <a class="logo-academy" href="#">html academy</a>
+        <a class="logo-borodinski" href="#">Borodinski</a>
+        <a class="logo-pink" href="#">Pink</a>
+        <a class="logo-mishka" href="#">Mishka</a>
+      </div>
       <p class="contacts-studio">Nerds design studio</p>
       <p class="contact-address">191186, Санкт-Петербурн,<br>ул. Б. Конюшенная, д. 19/8<br>тел.+7(812)275-75-75</p>
       <a class="button-contact" href="#">Напишите нам</a>

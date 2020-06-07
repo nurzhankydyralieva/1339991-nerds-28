@@ -111,14 +111,15 @@ img {
 }
 
 .feature-slider {
-  width: 1460px;
-  height: 545px;
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  list-style: none;
   background-color: var(--basic-light-grey);
 }
 
-.feature-list .feature-item {
-  width: 538px;
-  height: 111px;
+.feature-slider .feature-title {
   font-style: normal;
   font-weight: 500;
   font-size: 55px;
@@ -126,7 +127,12 @@ img {
   color: var(--basic-black);
 }
 
-.feature-item-item {
+.feature-item-text,
+.feature-item-text {
+  display: none;
+}
+
+.feature-text {
   width: 400px;
   height: 49px;
   font-style: normal;
@@ -150,6 +156,11 @@ img {
 
 }
 
+.second-slider,
+.third-slider {
+  display: none;
+}
+
 .slider-buttons {
   width: 18px;
   height: 18px;
@@ -168,7 +179,7 @@ img {
   list-style: none;
 }
 
-.service-item {
+.service-list {
   text-align: center;
 }
 
@@ -187,7 +198,7 @@ img {
   line-height: 24px;
 }
 
-.service-item-1 {
+.service-item-cite {
   width: 160px;
   height: 50px;
   background-color: var(--basic-red);
@@ -195,15 +206,15 @@ img {
   border-radius: 3px;
 }
 
-.service-item-1 a:hover {
+.service-item-cite a:hover {
   background-color: var(--basic-red-dark);
 }
 
-.service-item-1 a:focus {
+.service-item-cite a:focus {
   background-color: var(--basic-extra-red);
 }
 
-.service-item-2 {
+.service-item-app {
   width: 160px;
   height: 50px;
   background-color: var(--basic-light-green);
@@ -211,15 +222,15 @@ img {
   border-radius: 3px;
 }
 
-.service-item-2 a:hover {
+.service-item-app a:hover {
   background-color: var(--basic-green);
 }
 
-.service-item-2 a:focus {
+.service-item-app a:focus {
   background-color: var(--basic-dark-green);
 }
 
-.service-item-3 {
+.service-item-presentation {
   width: 160px;
   height: 50px;
   background-color: var(--basic-light-yellow);
@@ -227,16 +238,16 @@ img {
   border-radius: 3px;
 }
 
-.service-item-3 a:hover {
+.service-item-presentation a:hover {
   background-color: var(--basic-yellow);
 }
 
-.service-item-3 a:focus {
+.service-item-presentation a:focus {
   background-color: var(--basic-dark-yellow);
 }
 
 
-.slogan-caption {
+.slogan-text {
   font-style: normal;
   font-weight: 500;
   font-size: 45px;
@@ -244,14 +255,14 @@ img {
   color: var(--basic-black);
 }
 
-.slogan-caption-1 ul p {
+.slogan-description {
   font-style: normal;
   font-size: 16px;
   line-height: 24px;
   color: var(--basic-black);
 }
 
-.slogan-caption-2 {
+.slogan-info {
   height: 24px;
   font-weight: bold;
   font-size: 16px;
@@ -266,19 +277,18 @@ img {
 }
 
 .table dt {
-  height: 64px;
-  font-weight: bold;
-  font-size: 45px;
-  line-height: 64px;
-}
-
-.table dd {
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
 }
 
-.slogan a {
+.table dd {
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 64px;
+}
+
+.logos {
   color: var(--basic-black);
   opacity: 02;
 }
@@ -335,8 +345,8 @@ img {
 }
 
 .map-contact {
-  width: 1460px;
-  height: 416px;
+  width: 100%;
+  height: auto;
   background-image: url(../img/map1.png);
 }
 
@@ -346,8 +356,8 @@ img {
 }
 
 .page-title {
-  width: 1460px;
-  height: 355px;
+  width: 100%;
+  height: auto;
   background-color: var(--basic-light-grey);
   color: var(--basic-black);
   font-style: normal;
@@ -431,8 +441,7 @@ img {
 }
 
 .filter-type h2 {
-  width: 134px;
-  height: 30px;
+
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -441,27 +450,22 @@ img {
   color: var(--basic-black);
 }
 
-.filter-type-difference {
+.filter-difference {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
   color: var(--basic-black);
   text-transform: uppercase;
-}
-
-.filter-type .price {
-  width: 60px;
-  height: 18px;
-}
-
-.filter-type .type {
   opacity: 0.3;
 }
 
-.filter-type .name {
-  width: 101px;
-  opacity: 0.3;
+.filter-difference:hover {
+  opacity: 0.6;
+}
+
+.filter-difference:active {
+  color: var(--basic-black);
 }
 
 .filter-type .decrease,
@@ -539,28 +543,29 @@ img {
   color: var(--basic-black);
 }
 
-.nav-button-first:hover,
-.nav-button-second:hover,
-.nav-button-third:hover {
+.nav-buttons:hover,
+.nav-button-next:hover,
+.nav-button-previous:hover {
   background-color: var(--basic-dark-grey);
 }
 
-.nav-button-first:focus,
-.nav-button-second:focus,
-.nav-button-third:focus {
+.nav-buttons:focus,
+.nav-button-next:focus,
+.nav-button-previous:focus {
   background-color: var(--basic-extra-grey);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
   border-radius: 3px;
 }
 
-.nav-button-first:active,
-.nav-button-second:active,
-.nav-button-third:active {
+.nav-buttons:active,
+.nav-button-next:active,
+.nav-button-previous:active {
   background-color: rgba(0, 0, 0, 0.0001);
   border: 3px solid var(--basic-grey-active);
 }
 
-.nav-button-next {
+.nav-button-next,
+.nav-button-previous {
   width: 260px;
   height: 50px;
 }
