@@ -587,12 +587,14 @@ img {
   display: inline-block;
   width: 81px;
   height: 81px;
-  background-color: var(--basic-light-grey);
   border-radius: 50%;
 }
 
 .social-link {
   display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
   background-repeat: no-repeat;
   background-color: var(--basic-grey-link);
 }
@@ -607,20 +609,19 @@ img {
 
 .social-link-vk {
   background-image: url("../img/vk-icon.svg");
-  width: 26px;
-  height: 15px;
+
 }
 
 .social-link-fb {
   background-image: url("../img/fb-icon.svg");
-  width: 12px;
-  height: 22px;
 }
 
 .social-link-inst {
   background-image: url("../img/insta-icon.svg");
-  width: 21px;
-  height: 21px;
+}
+
+.social-link::before {
+  position: absolute;
 }
 
 .advertisement h2 {
