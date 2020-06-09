@@ -60,31 +60,83 @@ img {
   height: auto;
 }
 
+.page {
+  height: 100%;
+}
+
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
+.main-header {
+  margin-bottom: 80px;
+
+  outline: 5px solid rgba(236, 126, 0, 0.733);
+  outline-offset: -5px;
+}
+
+.main-header-logo {
+  width: 160px;
+  height: 65px;
+
+  outline: 5px solid rgba(240, 131, 6, 0.863);
+  outline-offset: -5px;
+}
+
+.container {
+  width: 1440px;
+  margin: auto;
+  padding: 10px;
+}
+
+.main-navigation-wrapper .container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .main-navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   font-size: 14px;
   line-height: 16px;
   color: var(--basic-black);
   background-color: var(--basic-light-grey);
+
 }
 
 .main-navigation-wrapper {
+  width: 100%;
+  margin-bottom: 60px;
   background-color: var(--basic-light-grey);
 }
 
 .site-navigation {
-  list-style: none;
+  width: 560px;
+  margin: 0;
+  padding: 0;
   color: black;
   font-weight: 500;
   font-size: 16px;
   line-height: 30px;
+  outline: 5px solid rgba(226, 104, 4, 0.733);
+  outline-offset: -5px;
+  list-style: none;
 }
 
 
 .user-basket {
+  max-width: 160px;
   color: black;
   font-weight: 500;
   font-size: 16px;
   line-height: 30px;
+
+  outline: 5px solid rgba(240, 131, 6, 0.863);
+  outline-offset: -5px;
 }
 
 .main-header-logo a:not([href]) {
@@ -109,6 +161,10 @@ img {
 .site-navigation a:active,
 .user-basket a:active {
   color: rgba(0, 0, 0, 0.3);
+}
+
+.user-basket .cart-icon {
+  padding-left: 25px;
 }
 
 .feature-slider {
@@ -177,16 +233,27 @@ img {
 }
 
 .services {
+  margin-bottom: 80px;
   list-style: none;
+
+  outline: 5px solid rgba(240, 131, 6, 0.863);
 }
 
 .service-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 100px;
+  margin: 0;
+  padding: 0;
   text-align: center;
 }
 
 .service-item img {
   width: 300px;
   height: 146px;
+
+  outline: 5px solid rgba(240, 131, 6, 0.863);
+  outline-offset: -5px;
 }
 
 .service-item h3 {
@@ -379,6 +446,9 @@ img {
   margin: 0;
   padding: 0;
   border: none;
+
+  outline: 5px solid rgba(226, 104, 4, 0.733);
+  outline-offset: -5px;
 }
 
 .range-filter {
@@ -429,6 +499,7 @@ img {
   border-radius: 3px;
   width: 80px;
   height: 38p;
+
 }
 
 .price-controls .min-price,
@@ -459,6 +530,10 @@ img {
   color: var(--basic-black);
   text-transform: uppercase;
   opacity: 0.3;
+
+  outline: 5px solid rgba(226, 104, 4, 0.733);
+  outline-offset: -5px;
+}
 }
 
 .filter-difference:hover {
@@ -482,10 +557,16 @@ img {
 
 .breadcrumbs {
   color: var(--basic-darkslategrey);
+
+  outline: 5px solid rgba(226, 104, 4, 0.733);
+  outline-offset: -5px;
 }
 
 .breadcrumbs-field {
   color: var(--basic-darkslategrey);
+
+  outline: 5px solid rgba(226, 104, 4, 0.733);
+  outline-offset: -5px;
 }
 
 .filters legend {
@@ -494,6 +575,9 @@ img {
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
+
+  outline: 5px solid rgba(226, 104, 4, 0.733);
+  outline-offset: -5px;
 }
 
 .filters ul {
@@ -522,10 +606,29 @@ img {
 }
 
 .filter-type {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  align-content: start;
   color: var(--basic-black);
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
+}
+
+.filter-type h2 {
+
+  outline: 5px solid rgba(226, 104, 4, 0.733);
+  outline-offset: -5px;
+}
+
+.catalog-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  padding: 0;
+  margin: 0;
+  outline: 5px solid rgba(226, 104, 4, 0.733);
+  outline-offset: -5px;
 }
 
 .filter-type a {
@@ -573,13 +676,25 @@ img {
 
 /*main-footer */
 .main-footer {
+  padding: 60px 0;
+  margin-top: 68px;
   color: var(--basic-black);
   background-color: var(--basic-white);
   background-position: 0 0;
   background-repeat: no-repeat;
+
+  outline: 5px solid rgba(240, 131, 6, 0.863);
+  outline-offset: -5px;
+}
+
+.main-footer .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .social-list ul {
+  margin: 0;
+  width: 360px;
   list-style: none;
 }
 
@@ -622,6 +737,13 @@ img {
 
 .social-link::before {
   position: absolute;
+}
+
+.advertisement {
+  margin: 0;
+  width: 561px;
+  outline: 5px solid rgba(240, 131, 6, 0.863);
+  outline-offset: -5px;
 }
 
 .advertisement h2 {
