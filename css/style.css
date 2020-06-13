@@ -72,17 +72,35 @@ img {
 }
 
 .main-header {
-  margin-bottom: 80px;
-
-  outline: 5px solid rgba(236, 126, 0, 0.733);
+  margin: 0;
+  margin-bottom: 9px;
+  padding: 0;
+  outline: 5px solid rgba(226, 104, 4, 0.733);
   outline-offset: -5px;
 }
 
 .main-header-logo {
+  order: 0;
   width: 160px;
   height: 65px;
 
-  outline: 5px solid rgba(240, 131, 6, 0.863);
+  outline: 5px solid rgba(226, 104, 4, 0.733);
+  outline-offset: -5px;
+}
+
+.site-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  width: 560px;
+  margin: 0;
+  padding: 0;
+  color: black;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  list-style: none;
+
+  outline: 5px solid rgba(226, 104, 4, 0.733);
   outline-offset: -5px;
 }
 
@@ -101,7 +119,8 @@ img {
 
 .main-navigation {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
   font-size: 14px;
   line-height: 16px;
   color: var(--basic-black);
@@ -109,27 +128,12 @@ img {
 
 }
 
+
 .main-navigation-wrapper {
   width: 100%;
   margin-bottom: 60px;
   background-color: var(--basic-light-grey);
 }
-
-.site-navigation {
-  display: flex;
-  flex-wrap: wrap;
-  width: 560px;
-  margin: 0;
-  padding: 0;
-  color: black;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 30px;
-  outline: 5px solid rgba(226, 104, 4, 0.733);
-  outline-offset: -5px;
-  list-style: none;
-}
-
 
 .user-basket {
   max-width: 160px;
@@ -170,10 +174,18 @@ img {
   padding-left: 25px;
 }
 
-.feature-slider {
+.container-features {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  margin-bottom: 80px;
+  outline: 5px solid rgba(240, 131, 6, 0.863);
+  outline-offset: -5px;
+}
 
+
+.feature-slider {
   width: 100%;
-  height: auto;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -190,6 +202,7 @@ img {
 
 .feature-item {
   margin: 0;
+  margin-bottom: 25px;
 }
 
 .feature-item-text,
@@ -204,6 +217,8 @@ img {
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
+  margin: 0;
+  margin-bottom: 38px;
   color: var(--basic-darkslategrey);
 }
 
@@ -243,22 +258,24 @@ img {
 
 .services {
   list-style: none;
-  margin-bottom: 237px;
+  margin-bottom: 301px;
 }
 
 .service-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 100px;
-
+  margin: 0;
   padding: 0;
   list-style: none;
-  text-align: center;
+
 }
+
 
 .service-item img {
   width: 300px;
   height: 146px;
+  margin-bottom: 25px;
 }
 
 .service-item h3 {
@@ -270,6 +287,8 @@ img {
 .service-item p {
   font-size: 16px;
   line-height: 24px;
+  margin: 0 10px;
+
 }
 
 .service-item-cite,
@@ -280,7 +299,7 @@ img {
   border-radius: 3px;
   text-align: left;
   outline: 5px solid rgba(240, 131, 6, 0.863);
-  outline-offset: 15px;
+  outline-offset: -5px;
 }
 
 .service-item-cite a,
@@ -332,6 +351,15 @@ img {
   background-color: var(--basic-dark-yellow);
 }
 
+.container-slogan {
+  display: grid;
+  grid-template-columns: 660px 360px;
+  column-gap: 149px;
+  margin: 0;
+
+}
+
+
 
 .slogan-text {
   font-style: normal;
@@ -374,9 +402,17 @@ img {
   line-height: 64px;
 }
 
+
+
 .logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   color: var(--basic-black);
   opacity: 02;
+
+  outline: 5px solid rgba(240, 131, 6, 0.863);
+  outline-offset: -3px;
 }
 
 .logo-academy {
@@ -438,7 +474,7 @@ img {
 }
 
 /*catalog*/
-.catalog-page .main-header {
+.page-catalog .main-header {
   background-color: var(--basic-white);
 }
 
@@ -458,9 +494,14 @@ img {
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
+  text-align: center;
 }
 
-.catalog-page {
+.page-catalog {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-content: start;
+  margin: 0;
   color: var(--basic-black);
   background-color: var(--basic-white);
   background-image: url("../img/");
@@ -560,6 +601,9 @@ img {
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
+  margin: 0;
+  padding-bottom: 48px;
+  padding-right: 266px;
   text-transform: uppercase;
   color: var(--basic-black);
 
@@ -663,10 +707,11 @@ img {
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
-  margin-left: 60px;
+
 }
 
 .filter-type h2 {
+
   margin: 0;
   outline: 5px solid rgba(226, 104, 4, 0.733);
   outline-offset: -5px;
@@ -675,7 +720,7 @@ img {
 .page-catalog {
   display: grid;
   grid-template-columns: 360px 360px;
-  align-content: start;
+
   margin: 0;
 }
 
