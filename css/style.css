@@ -59,6 +59,7 @@ a {
 .img {
   max-width: 100%;
   height: auto;
+
 }
 
 .page {
@@ -73,8 +74,8 @@ a {
 }
 
 .main-header {
-  margin: 0;
 
+  margin: 0;
   padding: 0;
   background-color: var(--basic-light-grey);
   outline: 5px solid rgba(226, 104, 4, 0.733);
@@ -90,7 +91,7 @@ a {
 
 .site-navigation {
   display: flex;
-  flex-wrap: wrap;
+
   margin: 0;
   margin-top: 75px;
   padding: 0;
@@ -109,7 +110,6 @@ a {
 }
 
 .container {
-
   width: 1200px;
   margin: 0 auto;
   padding: 0 auto;
@@ -119,7 +119,6 @@ a {
 
 .main-navigation {
   display: flex;
-  justify-content: space-between;
   margin: 0;
   padding: 0;
   margin-bottom: 87px;
@@ -135,7 +134,6 @@ a {
 }
 
 .user-basket {
-  max-width: 160px;
   margin-top: 75px;
   color: black;
   font-weight: 500;
@@ -485,15 +483,12 @@ a {
 }
 
 .filters {
-  display: flex;
-
   margin: 0;
+  margin-right: 140px;
   padding: 0;
 }
 
 .filter-container {
-  display: flex;
-  flex-wrap: wrap;
   margin: 0;
 }
 
@@ -577,11 +572,21 @@ a {
   line-height: 22px;
 }
 
+.filet-type-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 54px;
+}
+
 .filter-difference {
   display: flex;
+  justify-content: space-between;
+  width: 340px;
   height: 18px;
   margin: 0;
+  margin-top: 61px;
   padding: 0;
+  padding-right: 25px;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -662,11 +667,11 @@ a {
 }
 
 .filter-type {
-  align-content: start;
   color: var(--basic-black);
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
+  margin-bottom: 60px;
 }
 
 .filter-type h2 {
@@ -677,25 +682,35 @@ a {
   text-transform: uppercase;
   color: var(--basic-black);
   margin: 0;
-
+  margin-top: 55px;
 
   outline: 5px solid rgba(226, 104, 4, 0.733);
   outline-offset: -5px;
 
 }
 
-.catalog-item {
-  display: flex;
 
+
+.catalog-item {
   list-style: none;
+  margin-bottom: 30px;
   outline: 5px solid rgba(51, 78, 0, 0.733);
   outline-offset: -5px;
 }
 
-
+.container {
+  display: flex;
+}
 
 .page-catalog {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  margin-bottom: 55px;
   padding: 0;
+
+
 }
 
 .filter-type a {
@@ -713,7 +728,7 @@ a {
   width: 50px;
   height: 50px;
   margin: 0;
-  margin-bottom: 60px;
+
   padding: 0;
   background-color: var(--basic-light-grey);
   border-radius: 3px;
