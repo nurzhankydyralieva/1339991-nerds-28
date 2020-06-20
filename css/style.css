@@ -112,7 +112,6 @@ a {
 .container {
   width: 1200px;
   margin: 0 auto;
-  padding: 0 auto;
   box-sizing: border-box;
 
 }
@@ -855,13 +854,10 @@ a {
   display: none;
 }
 
-.map img {
-  outline: 5px solid rgba(240, 131, 6, 0.863);
-  outline-offset: -5px;
-}
 
 .map {
-  width: 1200px;
+  position: relative;
+  overflow: hidden;
   height: 416px;
   margin: 0;
   margin-bottom: 68px;
@@ -869,4 +865,18 @@ a {
   background-repeat: no-repeat;
   outline: 5px solid rgba(240, 131, 6, 0.863);
   outline-offset: -5px;
+}
+
+.map img {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.map .map-marker {
+  display: none;
 }
