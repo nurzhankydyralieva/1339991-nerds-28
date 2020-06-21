@@ -701,7 +701,7 @@ a {
 }
 
 .container {
-  display: flex;
+  position: relative;
 }
 
 .page-catalog {
@@ -853,10 +853,6 @@ a {
   line-height: 22px;
 }
 
-.popup {
-  display: none;
-}
-
 
 .map {
   position: relative;
@@ -879,18 +875,26 @@ a {
   transform: translate(-50%, -50%);
 }
 
-.map .address {
-
+.address {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  margin-top: 54px;
+  padding: 0;
   width: 319px;
   height: 308px;
   background-color: var(--basic-white);
 }
 
 .contacts-studio {
+
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
+  margin-top: 49px;
+  margin-left: 50px;
   text-transform: uppercase;
   color: var(--basic-black);
 }
@@ -902,13 +906,18 @@ a {
 }
 
 .contact-address {
+  margin-top: 22px;
+  margin-left: 50px;
   font-weight: normal;
   color: var(--basic-grey-contact);
 }
 
 .button-contact {
+  position: absolute;
   width: 219px;
   height: 50px;
+  margin-top: 37px;
+  margin-left: 50px;
   border-radius: 3px;
   background-color: var(--basic-red);
   font-weight: 500;
