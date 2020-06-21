@@ -74,7 +74,6 @@ a {
 }
 
 .main-header {
-
   margin: 0;
   padding: 0;
   background-color: var(--basic-light-grey);
@@ -91,7 +90,6 @@ a {
 
 .site-navigation {
   display: flex;
-
   margin: 0;
   margin-top: 75px;
   padding: 0;
@@ -118,6 +116,8 @@ a {
 
 .main-navigation {
   display: flex;
+  justify-content: space-between;
+  width: 1200px;
   margin: 0;
   padding: 0;
   margin-bottom: 87px;
@@ -126,6 +126,8 @@ a {
   color: var(--basic-black);
   background-color: var(--basic-light-grey);
 
+  outline: 5px solid rgba(226, 104, 4, 0.733);
+  outline-offset: -5px;
 }
 
 .cart-icon a {
@@ -133,6 +135,7 @@ a {
 }
 
 .user-basket {
+  width: 120px;
   margin-top: 75px;
   color: black;
   font-weight: 500;
@@ -876,6 +879,38 @@ a {
   transform: translate(-50%, -50%);
 }
 
-.map .map-marker {
-  display: none;
+.map .address {
+
+  width: 319px;
+  height: 308px;
+  background-color: var(--basic-white);
+}
+
+.contacts-studio {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.contact-address .button-contact {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.contact-address {
+  font-weight: normal;
+  color: var(--basic-grey-contact);
+}
+
+.button-contact {
+  width: 219px;
+  height: 50px;
+  border-radius: 3px;
+  background-color: var(--basic-red);
+  font-weight: 500;
+  color: var(--basic-white);
 }
