@@ -167,25 +167,17 @@
 
     <section class="map">
       <img src="img/map1.png" width="1440" height="416" alt="Карта">
+      <div class="container">
+        <address>
+          <div class="address">
+            <p class="contacts-studio">Nerds design studio</p>
+            <p class="contact-address">191186, Санкт-Петербурн,<br>ул. Б. Конюшенная, д. 19/8<br>тел.+7(812)275-75-75
+            </p>
+            <a class="button-contact" href="#">Напишите нам</a>
+          </div>
+        </address>
+      </div>
     </section>
-
-    <div class="popup">
-      <p class="contacts-studio">Nerds design studio</p>
-      <p class="contact-address">191186, Санкт-Петербурн,<br>ул. Б. Конюшенная, д. 19/8<br>тел.+7(812)275-75-75</p>
-      <a class="button-contact" href="#">Напишите нам</a>
-
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <label for="name">Ваше имя:</label>
-        <input type="text" name="fullName" id="name" placeholder="Имя Фамилия" required>
-
-        <label for="email">Ваш email:</label>
-        <input type="email" name="email" id="email" placeholder="email@example.com" required>
-
-        <label for="comment-field">Текст письма:</label>
-        <textarea name="comment" id="comment-field" rows="5" placeholder="В свободной форме"></textarea>
-        <input type="submit" value="Отправить">
-      </form>
-    </div>
   </main>
 
   <footer class="page-footer main-footer">
@@ -207,6 +199,21 @@
       </section>
     </div>
   </footer>
+
+  <div class="form">
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <label for="name">Ваше имя:</label>
+      <input type="text" name="fullName" id="name" placeholder="Имя Фамилия" required>
+
+      <label for="email">Ваш email:</label>
+      <input type="email" name="email" id="email" placeholder="email@example.com" required>
+
+      <label for="comment-field">Текст письма:</label>
+      <textarea name="comment" id="comment-field" rows="5" placeholder="В свободной форме"></textarea>
+      <input type="submit" value="Отправить">
+    </form>
+  </div>
+
 </body>
 
 </html>
