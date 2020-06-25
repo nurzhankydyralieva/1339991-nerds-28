@@ -17,16 +17,20 @@
         <a class="main-header-logo" href="index.html">
           <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нердс">
         </a>
-        <ul class="site-navigation">
-          <li><a href="#">Студия</a></li>
-          <li><a href="#">Клиенты</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-        <div class="user-basket">
-          <a class="cart-icon" href="#"><img src="img/cart-icon.svg" alt="">Корзина</a>
+        <div class="main-navigation-wrapper">
+          <ul class="site-navigation">
+            <li><a href="#">Студия</a></li>
+            <li><a href="#">Клиенты</a></li>
+            <li><a href="catalog.html">Магазин</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+          <div class="user-basket">
+            <a class="cart-icon" href="#">Корзина</a>
+          </div>
         </div>
       </nav>
+    </div>
+    </nav>
     </div>
     <h1 class="page-title">Магазин готовых шаблонов</h1>
   </header>
@@ -43,17 +47,19 @@
                 <div class="range-controls">
                   <div class="scale">
                     <div class="bar">
-                      <button class="toggle" type="button"><span class="visually-hidden">Минимальная</span></button>
-                      <button class="toggle" type="button"><span class="visually-hidden">Максимальная</span></button>
+                      <button class="toggle-min-price" type="button"><span
+                          class="visually-hidden">Минимальная</span></button>
+                      <button class="toggle-max-price" type="button"><span
+                          class="visually-hidden">Максимальная</span></button>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="price-controls">
                 <label class="min-price" for="min">От</label>
-                <input type="text" name="costMin" id="min" value="0">
+                <input type="text" name="cost-min" id="min" value="0">
                 <label class="max-price" for="max">До</label>
-                <input type="text" name="costMax" id="max" value="15 000">
+                <input type="text" name="cost-max" id="max" value="15 000">
               </div>
             </fieldset>
             <fieldset>
@@ -171,7 +177,7 @@
       <div class="container">
         <address class="address">
           <p class="contacts-studio">Nerds design studio</p>
-          <p class="contact-address">191186, Санкт-Петербурн,<br>ул. Б. Конюшенная, д. 19/8<br>тел.+7(812)275-75-75
+          <p class="contact-address">191186, Санкт-Петербурн,<br>ул. Б. Конюшенная, д. 19/8<br><br>тел.+7(812)275-75-75
           </p>
           <a class="button-contact" href="#">Напишите нам</a>
         </address>
@@ -199,7 +205,8 @@
     </div>
   </footer>
 
-  <div class="form">
+  <section class="form">
+    <h2>Напишите нам</h2>
     <form action="https://echo.htmlacademy.ru" method="post">
       <label for="name">Ваше имя:</label>
       <input type="text" name="fullName" id="name" placeholder="Имя Фамилия" required>
@@ -211,7 +218,8 @@
       <textarea name="comment" id="comment-field" rows="5" placeholder="В свободной форме"></textarea>
       <input type="submit" value="Отправить">
     </form>
-  </div>
+    <button class="form-close" type="button" aria-label="Закрыть"></button>
+  </section>
 
 </body>
 
