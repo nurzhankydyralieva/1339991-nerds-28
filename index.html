@@ -70,13 +70,13 @@
             <div class="feature-img">
               <img src="img/nerds-index-slide31.png" width="760" height="430" alt="Слайдер с телефоном и ipad">
             </div>
-            <div class="slider-buttons">
-              <button class="button-1" type="button">1</button>
-              <button class="button-2" type="button">2</button>
-              <button class="button-3" type="button">3</button>
-            </div>
           </li>
         </ul>
+      </div>
+      <div class="slider-buttons">
+        <button class="button-1" type="button" aria-label="Первый слайд"></button>
+        <button class="button-2" type="button" aria-label="Второй слайд"></button>
+        <button class="button-3" type="button" aria-label="Третий слайд"></button>
       </div>
     </section>
 
@@ -167,20 +167,24 @@
       </div>
     </section>
 
-    <section class="form">
+    <section class="message">
       <h2>Напишите нам</h2>
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <label for="name">Ваше имя:</label>
-        <input type="text" name="fullName" id="name" placeholder="Имя Фамилия" required>
-
-        <label for="email">Ваш email:</label>
-        <input type="email" name="email" id="email" placeholder="email@example.com" required>
-
-        <label for="comment-field">Текст письма:</label>
-        <textarea name="comment" id="comment-field" rows="5" placeholder="В свободной форме"></textarea>
-        <input type="submit" value="Отправить">
+      <form class="message-form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="message-item">
+          <label for="name">Ваше имя:</label>
+          <input type="text" name="fullName" id="name" placeholder="Имя Фамилия" required>
+        </p>
+        <p class="message-item">
+          <label for="email">Ваш email:</label>
+          <input type="email" name="email" id="email" placeholder="email@example.com" required>
+        </p>
+        <p class="message-item">
+          <label for="comment-field">Текст письма:</label>
+          <textarea name="comment" id="comment-field" placeholder="В свободной форме"></textarea>
+        </p>
       </form>
-      <button class="form-close" type="button" aria-label="Закрыть"></button>
+      <button class="button" type="submit">Отправить</button>
+      <div class="button-close" type="close"></div>
     </section>
   </main>
 
