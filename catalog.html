@@ -39,7 +39,7 @@
       <div class="container">
         <section class="filters">
           <h2 class="visually-hidden">Фильтр</h2>
-          <form action="https://echo.htmlacademy.ru" method="get">
+          <form class="filter" action="https://echo.htmlacademy.ru" method="get">
             <fieldset class="filter-item">
               <legend>Стоимость:</legend>
               <div class="range-filter">
@@ -67,16 +67,16 @@
               <legend>Сетка:</legend>
               <ul class="breadcrumbs">
                 <li class="filter-option filter-radio">
-                  <label for="adaptive">Адаптивная</label>
-                  <input type="radio" name="grid" value="adaptive" id="adaptive" checked>
+                  <label for="adaptive"><img src="img/radio-on.svg">Адаптивная</label>
+                  <input class="visually-hidden" type="radio" name="grid" value="adaptive" id="adaptive" checked>
                 </li>
                 <li class="filter-option filter-radio">
-                  <label for="fixed">Фиксированная</label>
-                  <input type="radio" name="grid" value="fixed" id="fixed">
+                  <label for="fixed"><img src="img/radio-off.svg">Фиксированная</label>
+                  <input class="visually-hidden" type="radio" name="grid" value="fixed" id="fixed">
                 </li>
                 <li class="filter-option filter-radio">
-                  <label for="rubber">Резиновая</label>
-                  <input type="radio" name="grid" value="rubber" id="rubber">
+                  <label for="rubber"><img src="img/radio-off.svg">Резиновая</label>
+                  <input class="visually-hidden" type="radio" name="grid" value="rubber" id="rubber">
                 </li>
               </ul>
             </fieldset>
@@ -84,28 +84,28 @@
               <legend>Особенности:</legend>
               <ul class="breadcrumbs-field">
                 <li class="filter-option filter-checkbox">
-                  <label for="slider-field">Слайдер</label>
-                  <input type="checkbox" name="slider" id="slider-field" checked>
+                  <label for="slider-field"><img src="img/checkbox-on.svg">Слайдер</label>
+                  <input class="visually-hidden" type="checkbox" name="slider" id="slider-field" checked>
                 </li>
                 <li class="filter-option filter-checkbox">
-                  <label for="advantage-field">Блок преимуществ</label>
-                  <input type="checkbox" name="advantage" id="advantage-field">
+                  <label for="advantage-field"><img src="img/checkbox-off.svg">Блок преимуществ</label>
+                  <input class="visually-hidden" type="checkbox" name="advantage" id="advantage-field">
                 </li>
                 <li class="filter-option filter-checkbox">
-                  <label for="news-field">Новости</label>
-                  <input type="checkbox" name="news" id="news-field" checked>
+                  <label for="news-field"><img src="img/checkbox-on.svg">Новости</label>
+                  <input class="visually-hidden" type="checkbox" name="news" id="news-field" checked>
                 </li>
                 <li class="filter-option filter-checkbox">
-                  <label for="gallery-field">Галерея</label>
-                  <input type="checkbox" name="gallery" id="gallery-field">
+                  <label for="gallery-field"><img src="img/checkbox-off.svg">Галерея</label>
+                  <input class="visually-hidden" type="checkbox" name="gallery" id="gallery-field">
                 </li>
                 <li class="filter-option filter-checkbox">
-                  <label for="basket-field">Корзина</label>
-                  <input type="checkbox" name="basket" id="basket-field">
+                  <label for="basket-field"><img src="img/checkbox-off.svg">Корзина</label>
+                  <input class="visually-hidden" type="checkbox" name="basket" id="basket-field">
                 </li>
               </ul>
             </fieldset>
-            <button type="submit">Показать</button>
+            <button class="button-filter" type="submit">Показать</button>
           </form>
         </section>
 

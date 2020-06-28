@@ -586,7 +586,7 @@ a {
 }
 
 .range-controls .bar {
-  width: 138px;
+  width: 140px;
   height: 2px;
   background-color: var(--basic-light-green);
 }
@@ -623,8 +623,7 @@ a {
   background-color: var(--basic-light-grey);
   border: none;
   border-radius: 3px;
-  width: 80px;
-  height: 38p;
+  height: 38px;
 }
 
 .range-controls .toggle-min-price {
@@ -680,8 +679,8 @@ a {
 .filte-type .increase {
   width: 11px;
   height: 10px;
-  background-image: url(../img/icon-down-dir.png),
-    url(../img/icon-up-dir.png);
+  background-image: url(../img/icon-down-dir.svg),
+    url(../img/icon-up-dir.svg);
 }
 
 .decrease,
@@ -703,25 +702,44 @@ a {
   padding-left: 18px;
 }
 
+.filter-option label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
+
 .breadcrumbs {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
   color: var(--basic-darkslategrey);
+
 }
 
 .breadcrumbs li {
   position: relative;
-  margin-right: 41px;
+
 }
 
-.breadcrumbs-field {}
-
-
-.filters ul {
-  width: 149px;
-  height: 99px;
+.filter-input-checkbox+label::before {
+  content: "";
+  position: absolute;
+  left: -42px;
+  top: 0;
+  width: 23px;
+  height: 23px;
+  border: 2px solid var(--basic-dimgrey);
 }
+
+.filter fieldset {
+  padding: 0;
+  margin-bottom: 46px;
+  border: none;
+
+}
+
 
 .filter-radio,
 .filter-checkbox {
@@ -730,6 +748,7 @@ a {
   font-style: normal;
   font-size: 16px;
   line-height: 19px;
+  margin-bottom: 19px;
 }
 
 .filter-input-radio:hover+label,
@@ -762,6 +781,27 @@ a {
   margin-top: 55px;
 }
 
+.button-filter {
+  background-color: var(--basic-light-grey);
+  padding-top: 17px;
+  padding-right: 89px;
+  padding-bottom: 15px;
+  padding-left: 88px;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  font-weight: 500;
+  border-radius: 3px;
+}
+
+.button-filter:hover {
+  background-color: var(--basic-dark-grey);
+}
+
+.button-filter:focus {
+  border-top: 2px solid rgba(0, 1, 1, 0.3);
+  background-color: var(--basic-extra-grey);
+}
+
 .catalog-item {
   list-style: none;
   margin-bottom: 30px;
@@ -786,7 +826,7 @@ a {
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
-  color: rgba (0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .nav-button-previous {
@@ -1032,7 +1072,7 @@ a {
 }
 
 .message {
-
+  display: none;
   position: fixed;
   top: 120px;
   left: 50%;
