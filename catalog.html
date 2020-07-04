@@ -21,14 +21,13 @@
           <ul class="site-navigation">
             <li><a href="#">Студия</a></li>
             <li><a href="#">Клиенты</a></li>
-            <li><a href="catalog.html">Магазин</a></li>
+            <li><a class="current" href="catalog.html">Магазин</a></li>
             <li><a href="#">Контакты</a></li>
           </ul>
           <div class="user-basket">
-            <a class="cart-icon" href="#">Корзина</a>
+            <div class="current"><a class="cart-icon" href="catalog.html">Корзина</a></div>
           </div>
         </div>
-      </nav>
     </div>
 
     <h1 class="page-title">Магазин готовых шаблонов</h1>
@@ -67,16 +66,17 @@
               <legend>Сетка:</legend>
               <ul class="breadcrumbs">
                 <li class="filter-option-radio filter-radio">
+                  <input class="visually-hidden filter-radio-input" type="radio" name="grid" value="adaptive"
+                    id="adaptive" checked>
                   <label for="adaptive">Адаптивная</label>
-                  <input class="visually-hidden" type="radio" name="grid" value="adaptive" id="adaptive" checked>
                 </li>
                 <li class="filter-option-radio filter-radio">
+                  <input class="visually-hidden filter-radio-input" type="radio" name="grid" value="fixed" id="fixed">
                   <label for="fixed">Фиксированная</label>
-                  <input class="visually-hidden" type="radio" name="grid" value="fixed" id="fixed">
                 </li>
                 <li class="filter-option-radio filter-radio">
+                  <input class="visually-hidden filter-radio-input" type="radio" name="grid" value="rubber" id="rubber">
                   <label for="rubber">Резиновая</label>
-                  <input class="visually-hidden" type="radio" name="grid" value="rubber" id="rubber">
                 </li>
               </ul>
             </fieldset>
@@ -84,28 +84,28 @@
               <legend>Особенности:</legend>
               <ul class="breadcrumbs-field">
                 <li class="filter-option filter-checkbox">
+                  <input class="visually-hidden filter-checkbox-input" type="checkbox" name="slider" id="slider-field"
+                    checked>
                   <label for="slider-field">Слайдер</label>
-                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="slider" id="slider-field"
-                    checked>
                 </li>
                 <li class="filter-option filter-checkbox">
-                  <label for="advantage-field">Блок преимуществ</label>
-                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="advantage"
+                  <input class="visually-hidden filter-checkbox-input" type="checkbox" name="advantage"
                     id="advantage-field">
+                  <label for="advantage-field">Блок преимуществ</label>
                 </li>
                 <li class="filter-option filter-checkbox">
-                  <label for="news-field">Новости</label>
-                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="news" id="news-field"
+                  <input class="visually-hidden filter-checkbox-input" type="checkbox" name="news" id="news-field"
                     checked>
+                  <label for="news-field">Новости</label>
                 </li>
                 <li class="filter-option filter-checkbox">
-                  <label for="gallery-field">Галерея</label>
-                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="gallery"
+                  <input class="visually-hidden filter-checkbox-input" type="checkbox" name="gallery"
                     id="gallery-field">
+                  <label for="gallery-field">Галерея</label>
                 </li>
                 <li class="filter-option filter-checkbox">
+                  <input class="visually-hidden filter-checkbox-input" type="checkbox" name="basket" id="basket-field">
                   <label for="basket-field">Корзина</label>
-                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="basket" id="basket-field">
                 </li>
               </ul>
             </fieldset>
@@ -139,13 +139,11 @@
             </li>
             <li class="catalog-item">
               <div class="catalog-wrapper">
-
                 <div class="catalog-info">
                   <h3><a class="website" href="#">Pink App</a></h3>
                   <p>Продуктовый лендинг приложения для iOS и Android</p>
                   <a class="button" href="#">9 900 ₽</a>
                 </div>
-
                 <img src="img/pink.jpg" width="360" height="580" alt="Сайт Pink">
               </div>
             </li>
