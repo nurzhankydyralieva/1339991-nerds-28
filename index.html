@@ -27,7 +27,6 @@
           <div class="user-basket">
             <div class="cart-icon"><a href="#">Корзина</a></div>
           </div>
-
         </div>
       </nav>
     </div>
@@ -104,7 +103,6 @@
             <a class="button-book" href="#">Заказать</a>
           </li>
         </ul>
-
       </section>
     </div>
 
@@ -144,12 +142,12 @@
     </div>
     <div class="container">
       <div class="logos">
-        <a class="logo-link" href="https://echo.htmlacademy.ru/"><img src="img/logo-htmlacademy.png" width="199"
-            height="68" alt="academy"></a>
-        <a class="logo-link" href="https://echo.htmlacademy.ru/"><img src="img/logo-barbershop.png" width="209"
-            height="90" alt="barbershop"></a>
-        <a class="logo-link" href="https://echo.htmlacademy.ru/"><img src="img/logo-pink.png" width="185" height="52"
-            alt="pink"></a>
+        <a class="logo-link logo-link-academy" href="https://echo.htmlacademy.ru/"><img src="img/logo-htmlacademy.png"
+            width="199" height="68" alt="academy"></a>
+        <a class="logo-link logo-link-barbershop" href="https://echo.htmlacademy.ru/"><img src="img/logo-barbershop.png"
+            width="209" height="90" alt="barbershop"></a>
+        <a class="logo-link logo-link-pink" href="https://echo.htmlacademy.ru/"><img src="img/logo-pink.png" width="185"
+            height="52" alt="pink"></a>
         <a class="logo-link" href="https://echo.htmlacademy.ru/"><img src="img/logo-mishka.png" width="173" height="84"
             alt="mishka"></a>
       </div>
@@ -169,23 +167,26 @@
     </section>
 
     <section class="message">
+      <button class="button-close" type="button"></button>
       <h2>Напишите нам</h2>
       <form class="message-form" action="https://echo.htmlacademy.ru" method="post">
         <p class="message-item">
           <label for="name">Ваше имя:</label>
-          <input type="text" name="fullName" id="name" placeholder="Имя Фамилия" required>
+          <input class="message-input message-input-invalid" type="text" name="fullName" id="name"
+            placeholder="Имя Фамилия" required>
         </p>
         <p class="message-item">
           <label for="email">Ваш email:</label>
-          <input type="email" name="email" id="email" placeholder="email@example.com" required>
+          <input class="message-input message-input-invalid" type="email" name="email" id="email"
+            placeholder="email@example.com" required>
         </p>
-        <p class="message-item">
+        <p class="message-item-text">
           <label for="comment-field">Текст письма:</label>
-          <textarea name="comment" id="comment-field" placeholder="В свободной форме"></textarea>
+          <textarea class="message-input message-input-invalid" name="comment" id="comment-field"
+            placeholder="В свободной форме"></textarea>
         </p>
       </form>
       <button class="button" type="submit">Отправить</button>
-      <div class="button-close" type="close"></div>
     </section>
   </main>
 

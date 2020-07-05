@@ -28,6 +28,7 @@
             <div class="current"><a class="cart-icon" href="catalog.html">Корзина</a></div>
           </div>
         </div>
+      </nav>
     </div>
 
     <h1 class="page-title">Магазин готовых шаблонов</h1>
@@ -45,20 +46,17 @@
                 <div class="range-controls">
                   <div class="scale">
                     <div class="bar">
-
-
                       <div class="toggle toggle-min-price"><span class="visually-hidden">Минимальная</span></div>
                       <div class="toggle toggle-max-price"><span class="visually-hidden">Максимальная</span></div>
-
                     </div>
                   </div>
                 </div>
               </div>
               <div class="price-controls">
                 <label class="min-price" for="min">От</label>
-                <input type="text" name="cost-min" id="min" value="0">
+                <input class="price-min" type="text" name="cost-min" id="min" value="0">
                 <label class="max-price" for="max">До</label>
-                <input type="text" name="cost-max" id="max" value="15 000">
+                <input class="price-max" type="text" name="cost-max" id="max" value="15 000">
               </div>
             </fieldset>
 
@@ -189,9 +187,9 @@
             </li>
           </ul>
           <div class="nav-buttons">
-            <a class="button-page" href="#">1</a>
-            <a class="button-page2" href="#">2</a>
-            <a class="button-page3" href="#">3</a>
+            <a class="button-page button-page-active" href="#">1</a>
+            <a class="button-page" href="#">2</a>
+            <a class="button-page" href="#">3</a>
             <a class="nav-button-previous" href="#"><span class="visually-hidden">Предыдущий</span></a>
             <a class="nav-button-next" href="#">Следующая</a>
           </div>
@@ -213,23 +211,28 @@
     </section>
 
     <section class="message">
+      <button class="button-close" type="button"></button>
       <h2>Напишите нам</h2>
+
       <form class="message-form" action="https://echo.htmlacademy.ru" method="post">
         <p class="message-item">
           <label for="name">Ваше имя:</label>
-          <input type="text" name="fullName" id="name" placeholder="Имя Фамилия" required>
+          <input class="message-input message-input-invalid" type="text" name="fullName" id="name"
+            placeholder="Имя Фамилия" required>
         </p>
         <p class="message-item">
           <label for="email">Ваш email:</label>
-          <input type="email" name="email" id="email" placeholder="email@example.com" required>
+          <input class="message-input message-input-invalid" type="email" name="email" id="email"
+            placeholder="email@example.com" required>
         </p>
-        <p class="message-item">
+        <p class="message-item-text">
           <label for="comment-field">Текст письма:</label>
-          <textarea name="comment" id="comment-field" placeholder="В свободной форме"></textarea>
+          <textarea class="message-input message-input-invalid" name="comment" id="comment-field"
+            placeholder="В свободной форме"></textarea>
         </p>
       </form>
       <button class="button" type="submit">Отправить</button>
-      <div class="button-close" type="close"></div>
+
     </section>
   </main>
 
