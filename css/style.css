@@ -545,23 +545,18 @@ a {
 }
 
 .logos {
-
+  display: flex;
+  min-height: 180px;
+  align-items: center;
   margin: 0;
   margin-bottom: 80px;
   padding: 0;
   color: var(--basic-black);
   border-bottom: 2px solid var(--basic-light-grey);
-  padding-bottom: 20px;
-  padding-top: 63px;
+
 
 }
 
-.logos .container {
-  display: flex;
-  justify-content: space-between;
-  width: 1130px;
-
-}
 
 .logo-link img {
   position: relative;
