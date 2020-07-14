@@ -56,6 +56,7 @@ body {
 a {
   text-decoration: none;
   text-transform: uppercase;
+  
 }
 
 .img {
@@ -78,20 +79,15 @@ a {
   background-color: var(--basic-light-grey);
 }
 
-.main-header-logo {
+.main-header-logo{
   order: 0;
   width: 160px;
   height: 65px;
   margin-top: 49px;
   margin-right: 203px;
 }
-
-.main-header-logo:hover {
-  opacity: 0.3;
-}
-
 .main-header-logo:active {
-  color: var(--basic-black);
+  opacity: 0.1;
 }
 
 .site-navigation {
@@ -1267,7 +1263,10 @@ a {
   font-size: 16px;
   line-height: 22px;
 }
-
+.address .tel{
+  color: var(--basic-grey-contact);
+  text-decoration: none;
+}
 .map {
   position: relative;
   overflow: hidden;
@@ -1353,7 +1352,7 @@ a {
 }
 
 .message {
-  display: none;
+  
   padding-top: 63px;
   padding-right: 100px;
   padding-bottom: 84px;
@@ -1514,7 +1513,7 @@ a {
   transform: rotate(45deg);
 }
 
-.button-close::before:hover,
-.button-close::after:hover {
+.button-close:hover::before,
+.button-close:hover::after {
   background: var(--basic-red);
 }
