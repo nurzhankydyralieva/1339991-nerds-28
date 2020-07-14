@@ -1,13 +1,13 @@
 :root {
-  --basic-black: #000000;
+  --basic-black: #000;
   --basic-grey: #A6A6A6;
   --basic-extra-grey: #D5D5D5;
-  --basic-light-grey: #EEEEEE;
+  --basic-light-grey: #EEE;
   --basic-dark-grey: #DFDFDF;
   --basic-dimgrey: #4D4D4D;
-  --basic-silver-grey: #444444;
+  --basic-silver-grey: #444;
   --basic-darkslategrey: #283136;
-  --basic-white: #ffffff;
+  --basic-white: #fff;
   --basic-red: #FB565A;
   --basic-red-dark: #E74246;
   --basic-extra-red: #D7373B;
@@ -18,13 +18,13 @@
   --basic-light-yellow: #EFC84A;
   --basic-dark-yellow: #E5A722;
   --basic-grey-button: #C1C1C1;
-  --basic-grey-contact: #666666;
+  --basic-grey-contact: #666;
   --basic-grey-active: #DBDBDB;
   --basic-black-button: #231F20;
   --basic-grey-link: #E1E1E1;
   --basic-grey-controls: #ABABAB;
   --basic-grey-border: #D7DCDE;
-  --basic-grey-focus: #B4B9BB;
+  --basic-grey-focus: #B4B9BB
 }
 
 .visually-hidden {
@@ -35,7 +35,7 @@
   padding: 0;
   border: 0;
   overflow: hidden;
-  clip: rect(0 0 0 0);
+  clip: rect(0 0 0 0)
 }
 
 body {
@@ -44,38 +44,38 @@ body {
   padding: 0;
   font-family: "Roboto", Arial, sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: var(--basic-darkslategrey);
   background-color: var(--basic-white);
   background-position: top center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat
 }
 
 a {
   text-decoration: none;
-  text-transform: uppercase;
+  text-transform: uppercase
 }
 
 .img {
   max-width: 100%;
-  height: auto;
+  height: auto
 }
 
 .page {
-  height: 100%;
+  height: 100%
 }
 
 .page-body {
   min-height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
-  align-content: start;
+  align-content: start
 }
 
 .main-header {
-  background-color: var(--basic-light-grey);
+  background-color: var(--basic-light-grey)
 }
 
 .main-header-logo {
@@ -83,15 +83,15 @@ a {
   width: 160px;
   height: 65px;
   margin-top: 49px;
-  margin-right: 203px;
+  margin-right: 203px
 }
 
 .main-header-logo:hover {
-  opacity: 0.3;
+  opacity: .3
 }
 
 .main-header-logo:active {
-  color: var(--basic-black);
+  color: var(--basic-black)
 }
 
 .site-navigation {
@@ -100,33 +100,33 @@ a {
   margin: 0;
   margin-top: 75px;
   padding: 0;
-  color: black;
+  color: #000;
   font-weight: 500;
   font-size: 16px;
   line-height: 30px;
-  list-style: none;
+  list-style: none
 }
 
 .site-navigation a {
   position: relative;
-  padding-right: 46px;
+  padding-right: 46px
 }
 
 .site-navigation li {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between
 }
 
 .container {
   width: 1200px;
-  margin: 0 auto;
+  margin: 0 auto
 }
 
 .main-navigation-wrapper {
   display: flex;
   justify-content: space-between;
   width: 798px;
-  position: relative;
+  position: relative
 }
 
 .current::after {
@@ -135,13 +135,13 @@ a {
   width: 0;
   height: 2px;
   background-color: var(--basic-red);
-  transition: width .3s;
+  transition: width .3s
 }
 
 .current:link::after {
   width: 100%;
   transition: width .3s;
-  margin-top: 13px;
+  margin-top: 13px
 }
 
 .main-navigation {
@@ -151,21 +151,21 @@ a {
   font-size: 14px;
   line-height: 16px;
   color: var(--basic-black);
-  background-color: var(--basic-light-grey);
+  background-color: var(--basic-light-grey)
 }
 
 .user-basket {
   max-width: 120px;
   margin-top: 75px;
-  color: black;
+  color: #000;
   font-weight: 500;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 30px
 }
 
 .user-basket .cart-icon {
   padding-left: 40px;
-  position: relative;
+  position: relative
 }
 
 .cart-icon::before {
@@ -175,47 +175,47 @@ a {
   left: 0;
   width: 15px;
   height: 15px;
-  background-image: url("../img/cart-icon.svg");
+  background-image: url(../img/cart-icon.svg);
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: 0 0
 }
 
 .main-header-logo a:not([href]) {
-  background-color: var(--basic-light-grey);
+  background-color: var(--basic-light-grey)
 }
 
 .site-navigation a,
 .user-basket a {
-  color: var(--basic-black);
+  color: var(--basic-black)
 }
 
 .site-navigation a:hover,
 .user-basket a:hover {
-  color: var(--basic-red);
+  color: var(--basic-red)
 }
 
 .site-navigation a:focus,
 .user-basket a:focus {
-  color: var(--basic-black);
+  color: var(--basic-black)
 }
 
 .site-navigation a:active,
 .user-basket a:active {
-  opacity: 0.3;
+  opacity: .3
 }
 
 .features {
   width: 100%;
   height: 430px;
   margin-bottom: 80px;
-  background-color: var(--basic-light-grey);
+  background-color: var(--basic-light-grey)
 }
 
 .feature-slider {
   width: 100%;
   padding: 0;
   margin: 0;
-  list-style: none;
+  list-style: none
 }
 
 .feature-slider .feature-title {
@@ -226,50 +226,46 @@ a {
   line-height: 55px;
   margin: 0;
   margin-top: 78px;
-  color: var(--basic-black);
+  color: var(--basic-black)
 }
 
 .feature-item-active {
-  display: flex;
+  display: flex
 }
 
 .feature-item {
   display: none;
   width: 380px;
-  margin: 0;
+  margin: 0
 }
 
 .feature-img {
   flex-shrink: 0;
   width: 760px;
-  height: 430px;
+  height: 430px
 }
 
 .feature-text {
   width: 400px;
   height: 49px;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   margin: 0;
   margin-bottom: 38px;
   margin-top: 26px;
   margin-left: 1px;
-  color: var(--basic-darkslategrey);
+  color: var(--basic-darkslategrey)
 }
 
 .feature-wrapper {
-  margin-right: -4px;
+  margin-right: -4px
 }
 
 .button {
   display: inline-block;
   position: absolute;
-  padding-top: 17px;
-  padding-right: 54px;
-  padding-bottom: 16px;
-  padding-left: 55px;
   vertical-align: middle;
   border-radius: 3px;
   background-color: var(--basic-red);
@@ -278,18 +274,18 @@ a {
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
+  padding: 17px 54px 16px 55px
 }
 
 .button:hover {
-  background-color: var(--basic-red-dark);
+  background-color: var(--basic-red-dark)
 }
 
 .button:active {
   background-color: var(--basic-extra-red);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
-  color: rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+  color: rgba(255, 255, 255, 0.3)
 }
-
 
 .slider-buttons {
   display: flex;
@@ -299,7 +295,7 @@ a {
   justify-content: space-between;
   transform: translateX(-50%);
   left: 50%;
-  z-index: 100;
+  z-index: 100
 }
 
 .slider-button {
@@ -311,7 +307,7 @@ a {
   border-radius: 50%;
   border: none;
   cursor: pointer;
-  outline: none;
+  outline: none
 }
 
 .slider-button-active::before {
@@ -325,11 +321,11 @@ a {
   height: 8px;
   border: 2px solid var(--basic-grey-button);
   border-radius: 50%;
-  box-sizing: border-box;
+  box-sizing: border-box
 }
 
 .services {
-  list-style: none;
+  list-style: none
 }
 
 .service-list {
@@ -339,12 +335,12 @@ a {
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-bottom: 92px;
+  margin-bottom: 92px
 }
 
 .service-item img {
   width: 300px;
-  height: 146px;
+  height: 146px
 }
 
 .service-item-cite h3,
@@ -355,11 +351,11 @@ a {
   font-size: 24px;
   line-height: 30px;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
   margin: 0;
   margin-top: 18px;
-  margin-bottom: 18px;
+  margin-bottom: 18px
 }
 
 .service-item-cite p,
@@ -369,63 +365,58 @@ a {
   font-size: 16px;
   line-height: 24px;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   color: var(--basic-darkslategrey);
   margin: 0;
-  margin-bottom: 45px;
+  margin-bottom: 45px
 }
 
-
-
 .button-book {
-  padding-top: 15px;
-  padding-right: 40px;
-  padding-bottom: 15px;
-  padding-left: 40px;
   border-radius: 3px;
   color: var(--basic-white);
+  padding: 15px 40px
 }
 
 .service-item-cite a {
-  background-color: var(--basic-red);
+  background-color: var(--basic-red)
 }
 
 .service-item-cite a:hover {
-  background-color: var(--basic-red-dark);
+  background-color: var(--basic-red-dark)
 }
 
 .service-item-cite a:active {
   background-color: var(--basic-extra-red);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
-  color: rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+  color: rgba(255, 255, 255, 0.3)
 }
 
 .service-item-app a {
-  background-color: var(--basic-light-green);
+  background-color: var(--basic-light-green)
 }
 
 .service-item-app a:hover {
-  background-color: var(--basic-green);
+  background-color: var(--basic-green)
 }
 
 .service-item-app a:active {
   background-color: var(--basic-dark-green);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
-  color: rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+  color: rgba(255, 255, 255, 0.3)
 }
 
 .service-item-presentation a {
-  background-color: var(--basic-light-yellow);
+  background-color: var(--basic-light-yellow)
 }
 
 .service-item-presentation a:hover {
-  background-color: var(--basic-yellow);
+  background-color: var(--basic-yellow)
 }
 
 .service-item-presentation a:active {
   background-color: var(--basic-dark-yellow);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
-  color: rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+  color: rgba(255, 255, 255, 0.3)
 }
 
 .slogan {
@@ -434,12 +425,12 @@ a {
   padding-top: 39px;
   padding-bottom: 33px;
   border-bottom: 2px solid var(--basic-light-grey);
-  border-top: 2px solid var(--basic-light-grey);
+  border-top: 2px solid var(--basic-light-grey)
 }
 
 .container-slogan {
   margin: 0;
-  margin-right: 149px;
+  margin-right: 149px
 }
 
 .slogan-text {
@@ -450,28 +441,28 @@ a {
   color: var(--basic-black);
   margin: 0;
   margin-bottom: 33px;
-  padding-top: 35px;
+  padding-top: 35px
 }
 
 .slogan-description,
 .slogan-description-info {
   list-style: none;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: var(--basic-darkslategrey);
-  margin-bottom: 40px;
+  margin-bottom: 40px
 }
 
 .slogan-description-info {
-  margin-right: 20px;
+  margin-right: 20px
 }
 
 .slogan-description li {
   position: relative;
   margin-bottom: 24px;
-  margin-left: -4px;
+  margin-left: -4px
 }
 
 .slogan-description li::before {
@@ -481,55 +472,55 @@ a {
   left: -36px;
   width: 25px;
   height: 2px;
-  background-color: var(--basic-red);
+  background-color: var(--basic-red)
 }
 
 .slogan-info {
   height: 24px;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
   color: var(--basic-black);
-  margin-bottom: 23px;
+  margin-bottom: 23px
 }
 
 .slogan-info-table {
-  margin-bottom: 30px;
+  margin-bottom: 30px
 }
 
 .slogan-table img {
   width: 360px;
   margin: 0;
-  padding: 0;
+  padding: 0
 }
 
 .slogan-table p {
   padding-top: 15px;
-  padding-left: 20px;
+  padding-left: 20px
 }
 
 .table {
   width: 360px;
   border-collapse: collapse;
-  text-align: left;
+  text-align: left
 }
 
 .table td {
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 18px
 }
 
 .table th {
   position: relative;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 45px;
   line-height: 64px;
   margin: 0;
   padding: 0;
   padding-bottom: 11px;
-  padding-right: 43px;
+  padding-right: 43px
 }
 
 .table th::after {
@@ -539,8 +530,8 @@ a {
   width: 30px;
   top: 14px;
   right: 10px;
-  background-image: url("../img/per-cent.png");
-  background-repeat: no-repeat;
+  background-image: url(../img/per-cent.png);
+  background-repeat: no-repeat
 }
 
 .logos {
@@ -551,42 +542,41 @@ a {
   margin-bottom: 80px;
   padding: 0;
   color: var(--basic-black);
-  border-bottom: 2px solid var(--basic-light-grey);
+  border-bottom: 2px solid var(--basic-light-grey)
 }
-
 
 .logo-link img {
   position: relative;
-  opacity: 0.2;
+  opacity: .2
 }
 
 .logo-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 300px;
+  width: 300px
 }
 
 .logo-link:nth-child(4n+1),
 .logo-link:nth-child(4n+4) {
-  width: 280px;
+  width: 280px
 }
 
 .logo-link-academy img {
   margin-left: -20px;
-  margin-top: 10px;
+  margin-top: 10px
 }
 
 .logo-link-mishka img {
-  margin-right: -20px;
+  margin-right: -20px
 }
 
 .logo-link:hover img {
-  opacity: 1;
+  opacity: 1
 }
 
 .logo-link:active {
-  opacity: 0.1;
+  opacity: .1
 }
 
 .logo-link-academy::after,
@@ -596,22 +586,21 @@ a {
   position: absolute;
   width: 2px;
   height: 52px;
-  background-color: var(--basic-light-grey);
+  background-color: var(--basic-light-grey)
 }
 
 .logo-link-academy::after {
-  margin-left: 141px;
+  margin-left: 141px
 }
 
 .logo-link-barbershop::after {
-  margin-left: 152px;
+  margin-left: 152px
 }
 
 .logo-link-pink::after {
-  margin-left: 152px;
+  margin-left: 152px
 }
 
-/*catalog*/
 .page-title {
   margin: 0;
   margin-top: 72px;
@@ -623,42 +612,42 @@ a {
   font-size: 55px;
   line-height: 55px;
   text-align: center;
-  padding-right: 15px;
+  padding-right: 15px
 }
 
 .filters {
-  margin-right: 140px;
+  margin-right: 140px
 }
 
 .filter-container .container {
-  display: flex;
+  display: flex
 }
 
 .filter-item {
   margin: 0;
-  margin-top: 55px;
+  margin-top: 55px
 }
 
 .filters legend {
   color: var(--basic-black);
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 30px;
-  text-transform: uppercase;
+  text-transform: uppercase
 }
 
 .range-filter {
   width: 260px;
-  margin-top: 49px;
+  margin-top: 49px
 }
 
 .filter-range legend {
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 30px;
-  color: var(--basic-black);
+  color: var(--basic-black)
 }
 
 .range-controls {
@@ -669,19 +658,19 @@ a {
   padding-left: 20px;
   padding-right: 20px;
   background-color: var(--basic-light-grey);
-  border-radius: 5px;
+  border-radius: 5px
 }
 
 .range-controls .scale {
   width: 205px;
   height: 2px;
-  background-color: var(--basic-dark-grey);
+  background-color: var(--basic-dark-grey)
 }
 
 .range-controls .bar {
   width: 140px;
   height: 2px;
-  background-color: var(--basic-light-green);
+  background-color: var(--basic-light-green)
 }
 
 .range-controls .toggle-min-price,
@@ -696,20 +685,20 @@ a {
   background-color: var(--basic-grey-controls);
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 var(--basic-grey-controls);
-  cursor: pointer;
+  cursor: pointer
 }
 
 .price-controls {
   display: flex;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 22px;
   align-items: center;
   color: var(--basic-darkslategrey);
   text-transform: uppercase;
   justify-content: space-between;
-  margin-bottom: 53px;
+  margin-bottom: 53px
 }
 
 .price-controls input {
@@ -719,19 +708,19 @@ a {
   background-color: var(--basic-light-grey);
   border: none;
   border-radius: 3px;
-  outline: none;
+  outline: none
 }
 
 .price-controls .price-min {
-  margin-right: 25px;
+  margin-right: 25px
 }
 
 .range-controls .toggle-min-price {
-  left: 18px;
+  left: 18px
 }
 
 .range-controls .toggle-max-price {
-  left: 160px;
+  left: 160px
 }
 
 .price-controls .min-price,
@@ -739,15 +728,15 @@ a {
   width: 23px;
   height: 22px;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 22px
 }
 
 .filet-type-container {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 48px;
+  margin-bottom: 48px
 }
 
 .filter-difference {
@@ -759,41 +748,41 @@ a {
   margin-top: 61px;
   margin-left: 30px;
   padding: 0;
-  text-transform: uppercase;
+  text-transform: uppercase
 }
 
 .filter-difference a {
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
   font-size: 14px;
   line-height: 18px;
-  color: var(--basic-black);
+  color: var(--basic-black)
 }
 
 .filter-difference .price,
 .filter-difference .type,
 .filter-difference .title {
-  opacity: 0.3;
+  opacity: .3
 }
 
 .filter-difference .price:hover,
 .filter-difference .type:hover,
 .filter-difference .title:hover {
-  opacity: 0.6;
+  opacity: .6
 }
 
 .filter-difference .price:active,
 .filter-difference .type:active,
 .filter-difference .title:active {
-  opacity: 1;
+  opacity: 1
 }
 
 .filter-difference .price {
-  margin-right: 25px;
+  margin-right: 25px
 }
 
 .filter-difference .type {
-  margin-right: 26px;
+  margin-right: 26px
 }
 
 .filter-difference .decrease,
@@ -802,65 +791,65 @@ a {
   background-repeat: no-repeat;
   width: 11px;
   height: 10px;
-  top: 4px;
+  top: 4px
 }
 
 .filter-difference .decrease {
-  background-image: url("../img/icon-down-dir.svg");
-  left: 320px;
+  background-image: url(../img/icon-down-dir.svg);
+  left: 320px
 }
 
 .filter-difference .increase {
-  background-image: url("../img/icon-up-dir.svg");
-  left: 348px;
+  background-image: url(../img/icon-up-dir.svg);
+  left: 348px
 }
 
 .decrease,
 .increase {
-  opacity: 0.3;
+  opacity: .3
 }
 
 .decrease:hover,
 .increase:hover {
-  opacity: 0.6;
+  opacity: .6
 }
 
 .decrease:active,
 .increase:active {
-  opacity: 1;
+  opacity: 1
 }
 
 .filte-type .increase {
-  padding-left: 18px;
+  padding-left: 18px
 }
 
 .filter-option label {
   position: relative;
   display: block;
   cursor: pointer;
-  user-select: none;
+  user-select: none
 }
 
 .breadcrumbs {
   color: var(--basic-darkslategrey);
   padding: 0;
   padding-top: 13px;
-  margin: 0;
+  margin: 0
 }
 
 .breadcrumbs-field {
   padding: 0;
   padding-top: 18px;
-  margin: 0;
+  margin: 0
 }
 
 .breadcrumbs li {
-  position: relative;
+  position: relative
 }
 
 .filter-breadcrumbs {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 25px
 }
 
 .filter-radio,
@@ -870,20 +859,20 @@ a {
   font-style: normal;
   font-size: 16px;
   line-height: 19px;
-  margin: 0;
+  margin: 0
 }
 
 .breadcrumbs .filter-radio {
-  margin-bottom: 14px;
+  margin-bottom: 14px
 }
 
 .breadcrumbs-field .filter-checkbox {
-  margin-bottom: 14px;
+  margin-bottom: 14px
 }
 
 .breadcrumbs-filter-checkbox {
   margin: 0;
-  width: 260px;
+  width: 260px
 }
 
 .filter-option label,
@@ -892,74 +881,69 @@ a {
   display: block;
   cursor: pointer;
   user-select: none;
-  padding-left: 35px;
+  padding-left: 35px
 }
 
 .filter-option-radio label {
-  background-image: url("../img/radio-off.svg");
+  background-image: url(../img/radio-off.svg);
   background-repeat: no-repeat;
   width: 25px;
-  height: 25px;
+  height: 25px
 }
 
 .filter-radio input:checked+label {
-  background-image: url("../img/radio-on.svg");
+  background-image: url(../img/radio-on.svg)
 }
 
-
 .filter-option label {
-  background-image: url("../img/checkbox-off.svg");
+  background-image: url(../img/checkbox-off.svg);
   background-repeat: no-repeat;
   width: 23px;
-  height: 26px;
+  height: 26px
 }
 
 .filter-checkbox input:checked+label {
-  background-image: url("../img/checkbox-on.svg");
+  background-image: url(../img/checkbox-on.svg)
 }
 
 .breadcrumbs .filter-option-radio {
-  margin-bottom: 15px;
+  margin-bottom: 15px
 }
 
 .filter-option-radio label,
 .filter-option label {
   width: 225px;
-  opacity: 0.6;
+  opacity: .6
 }
 
 .filter-option-radio:hover label,
 .filter-option:hover label {
-  opacity: 1;
+  opacity: 1
 }
 
 .filter-option-radio:active label,
 .filter-option:active label {
-  opacity: 0.3;
+  opacity: .3
 }
 
 .filter fieldset {
   padding: 0;
-  border: none;
+  border: none
 }
 
 .filter-input-radio:hover+label,
 .filter-input-checkbox:hover+label {
-  color: var(--basic-darkslategrey);
+  color: var(--basic-darkslategrey)
 }
 
 .filter-input-radio:active+label,
 .filter-input-checkbox:active+label {
   color: var(--basic-darkslategrey);
-  opacity: 0.3;
+  opacity: .3
 }
 
 .button-filter {
   background-color: var(--basic-light-grey);
-  padding-top: 17px;
-  padding-right: 89px;
-  padding-bottom: 15px;
-  padding-left: 88px;
   margin-top: 30px;
   color: var(--basic-black);
   text-transform: uppercase;
@@ -967,69 +951,70 @@ a {
   border: none;
   border-radius: 3px;
   outline: none;
+  padding: 17px 89px 15px 88px
 }
 
 .button-filter:hover {
-  background: var(--basic-dark-grey);
+  background: var(--basic-dark-grey)
 }
 
 .button-filter:active {
   background-color: var(--basic-extra-grey);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
-  color: rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+  color: rgba(0, 0, 0, 0.3)
 }
 
 .filter-type {
   color: var(--basic-black);
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 30px;
-  margin-bottom: 60px;
+  margin-bottom: 60px
 }
 
 .filter-type h2 {
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
   color: var(--basic-black);
   margin: 0;
-  margin-top: 55px;
+  margin-top: 55px
 }
 
 .catalog-wrapper {
   display: flex;
   position: relative;
-  background-image: url("../img/browser2.svg");
+  background-image: url(../img/browser2.svg);
   background-repeat: no-repeat;
   margin: 0;
   padding: 0;
   padding-top: 40px;
-  margin-bottom: 31px;
+  margin-bottom: 31px
 }
 
 .catalog-wrapper:hover {
-  background-image: url("../img/browser.svg");
+  background-image: url(../img/browser.svg)
 }
 
 .catalog-wrapper img {
-  background-image: url("../img/browser2.svg");
-  z-index: 1;
+  background-image: url(../img/browser2.svg);
+  z-index: 1
 }
 
 .catalog-wrapper:hover {
-  box-shadow: 0px 6px 15px rgba(0, 1, 1, 0.25);
+  box-shadow: 0 6px 15px rgba(0, 1, 1, 0.25)
 }
 
 .catalog-item {
-  list-style: none;
+  list-style: none
 }
 
 .container {
   position: relative;
   padding: 0 20px;
-  box-sizing: border-box;
+  box-sizing: border-box
 }
 
 .page-catalog {
@@ -1038,7 +1023,7 @@ a {
   justify-content: space-between;
   margin: 0;
   margin-bottom: 21px;
-  padding: 0;
+  padding: 0
 }
 
 .catalog-info {
@@ -1052,35 +1037,32 @@ a {
   text-align: center;
   padding-top: 26px;
   background-color: var(--basic-light-grey);
-  z-index: 0;
+  z-index: 0
 }
 
 .catalog-item:hover .catalog-info {
-  z-index: 2;
+  z-index: 2
 }
 
 .catalog-info .button {
   display: block;
   color: var(--basic-white);
   background-color: var(--basic-red);
-  padding-top: 17px;
-  padding-right: 72px;
-  padding-bottom: 15px;
-  padding-left: 72px;
   margin-left: 80px;
+  padding: 17px 72px 15px
 }
 
 .catalog-info .button:hover {
-  background-color: var(--basic-red-dark);
+  background-color: var(--basic-red-dark)
 }
 
 .catalog-info .button:active {
-  background-color: var(--basic-extra-red);
+  background-color: var(--basic-extra-red)
 }
 
 .catalog-info h3 {
   margin: 0;
-  padding-top: 27px;
+  padding-top: 27px
 }
 
 .catalog-info p {
@@ -1093,30 +1075,29 @@ a {
   margin-right: auto;
   padding-top: 11px;
   padding-bottom: 33px;
-  color: var(--basic-grey-contact);
+  color: var(--basic-grey-contact)
 }
-
 
 .catalog-info .website {
   width: 71px;
   height: 30px;
   font-size: 18px;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 30px;
   margin: 0;
   padding: 0;
   text-transform: uppercase;
-  color: var(--basic-black);
+  color: var(--basic-black)
 }
 
 .catalog-info .website:hover {
-  color: var(--basic-red);
+  color: var(--basic-red)
 }
 
 .catalog-info .website:active {
   color: var(--basic-black);
-  opacity: 0.3;
+  opacity: .3
 }
 
 .nav-buttons {
@@ -1125,14 +1106,10 @@ a {
   width: 440px;
   justify-content: space-between;
   margin: 0;
-  padding: 0;
+  padding: 0
 }
 
 .nav-buttons a {
-  padding-top: 14px;
-  padding-right: 17px;
-  padding-bottom: 12px;
-  padding-left: 17px;
   background-color: var(--basic-light-grey);
   border-radius: 3px;
   font-style: normal;
@@ -1141,39 +1118,36 @@ a {
   line-height: 18px;
   color: var(--basic-black);
   border: 3px solid var(--basic-light-grey);
+  padding: 14px 17px 12px
 }
 
 .nav-buttons .nav-button-next {
-  padding-top: 14px;
-  padding-right: 72px;
-  padding-bottom: 12px;
-  padding-left: 75px;
+  padding: 14px 72px 12px 75px
 }
 
 .nav-buttons a:hover,
 .nav-button-next a:hover,
 .nav-button-previous a:hover {
-  background-color: var(--basic-dark-grey);
+  background-color: var(--basic-dark-grey)
 }
 
 .nav-buttons a:active,
 .nav-button-next a:active,
 .nav-button-previous a:active {
   background-color: var(--basic-extra-grey);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
-  color: rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+  color: rgba(0, 0, 0, 0.3)
 }
 
 .nav-buttons .button-page-active {
   background: var(--basic-white);
-  border: 3px solid var(--basic-grey-active);
+  border: 3px solid var(--basic-grey-active)
 }
 
 .nav-buttons .nav-button-previous {
-  display: none;
+  display: none
 }
 
-/*main-footer */
 .main-footer .container {
   display: grid;
   grid-template-columns: 261px 660px 1fr;
@@ -1182,7 +1156,7 @@ a {
   background-color: var(--basic-white);
   background-position: 0 0;
   background-repeat: no-repeat;
-  padding-bottom: 76px;
+  padding-bottom: 76px
 }
 
 .social-list {
@@ -1190,7 +1164,7 @@ a {
   justify-content: space-between;
   margin: 0;
   padding: 0;
-  list-style: none;
+  list-style: none
 }
 
 .social-link {
@@ -1201,47 +1175,47 @@ a {
   background-repeat: no-repeat;
   width: 81px;
   height: 81px;
-  background-position: center;
+  background-position: center
 }
 
 .social-item {
   background-color: var(--basic-grey-link);
-  border-radius: 50%;
+  border-radius: 50%
 }
 
 .social-item:hover {
-  background-color: var(--basic-red-dark);
+  background-color: var(--basic-red-dark)
 }
 
 .social-item:active {
-  background-color: var(--basic-extra-red);
+  background-color: var(--basic-extra-red)
 }
 
 .social-link-vk {
-  background-image: url("../img/vk-icon.svg");
+  background-image: url(../img/vk-icon.svg)
 }
 
 .social-link-fb {
-  background-image: url("../img/fb-icon.svg");
+  background-image: url(../img/fb-icon.svg)
 }
 
 .social-link-inst {
-  background-image: url("../img/insta-icon.svg");
+  background-image: url(../img/insta-icon.svg)
 }
 
 .social-link-vk:active,
 .social-link-fb:active,
 .social-link-inst:active {
-  opacity: 0.3;
+  opacity: .3
 }
 
 .social-link::before {
-  position: absolute;
+  position: absolute
 }
 
 .advertisement {
   margin: 0;
-  padding: 0;
+  padding: 0
 }
 
 .advertisement h2 {
@@ -1252,9 +1226,9 @@ a {
   margin-top: 7px;
   color: var(--basic-black);
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
-  line-height: 36px;
+  line-height: 36px
 }
 
 .advertisement p {
@@ -1262,10 +1236,10 @@ a {
   height: 22px;
   margin: 0;
   color: var(--basic-silver-grey);
-  font-weight: normal;
+  font-weight: 400;
   font-weight: normal;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 22px
 }
 
 .map {
@@ -1274,7 +1248,7 @@ a {
   height: 416px;
   margin: 0;
   margin-bottom: 68px;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat
 }
 
 .map img {
@@ -1285,27 +1259,24 @@ a {
   height: auto;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%)
 }
 
 .map .container {
-  display: flex;
+  display: flex
 }
 
 .address {
-  padding-top: 49px;
-  padding-right: 50px;
-  padding-bottom: 60px;
-  padding-left: 50px;
   margin-top: 54px;
   text-align: center;
   background-color: var(--basic-white);
+  padding: 49px 50px 60px
 }
 
 .contacts-studio {
   height: 30px;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 30px;
   margin: 0;
@@ -1313,26 +1284,22 @@ a {
   padding: 0;
   text-align: start;
   color: var(--basic-black);
-  text-transform: uppercase;
+  text-transform: uppercase
 }
 
 .contact-address {
   text-align: start;
   height: 72px;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   margin: 0;
   margin-bottom: 50px;
-  color: var(--basic-grey-contact);
+  color: var(--basic-grey-contact)
 }
 
 .button-contact {
-  padding-top: 17px;
-  padding-right: 44px;
-  padding-bottom: 15px;
-  padding-left: 44px;
   border-radius: 3px;
   background-color: var(--basic-red);
   color: var(--basic-white);
@@ -1340,24 +1307,21 @@ a {
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
+  padding: 17px 44px 15px
 }
 
 .button-contact:hover {
-  background-color: var(--basic-red-dark);
+  background-color: var(--basic-red-dark)
 }
 
 .button-contact:active {
   background-color: var(--basic-extra-red);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
-  color: rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+  color: rgba(255, 255, 255, 0.3)
 }
 
 .message {
   display: none;
-  padding-top: 63px;
-  padding-right: 100px;
-  padding-bottom: 84px;
-  padding-left: 100px;
   position: fixed;
   top: 120px;
   left: 50%;
@@ -1368,12 +1332,13 @@ a {
   width: 960px;
   height: 590px;
   box-sizing: border-box;
+  padding: 63px 100px 84px
 }
 
 .message-item {
   margin: 0;
   width: 360px;
-  box-sizing: border-box;
+  box-sizing: border-box
 }
 
 .message-item input {
@@ -1384,25 +1349,25 @@ a {
   padding-left: 16px;
   margin-bottom: 34px;
   color: var(--basic-silver-grey);
-  box-sizing: border-box;
+  box-sizing: border-box
 }
 
 .message-item label,
 .message-item-text label {
   display: block;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-black);
   margin: 0;
   padding: 0;
   padding-bottom: 9px;
-  box-sizing: border-box;
+  box-sizing: border-box
 }
 
 .message-item-text {
   margin: 0;
-  padding: 0;
+  padding: 0
 }
 
 .message-item-text textarea {
@@ -1412,54 +1377,50 @@ a {
   margin-bottom: 47px;
   padding-top: 16px;
   padding-left: 16px;
-  box-sizing: border-box;
+  box-sizing: border-box
 }
 
 .message-item input:hover,
 .message-item textarea:hover {
   border-color: var(--basic-grey-focus);
-  color: var(--basic-silver-grey);
+  color: var(--basic-silver-grey)
 }
 
 .message-item input::placeholder,
 .message-item textarea::placeholder {
   color: var(--basic-silver-grey);
-  opacity: 0.5;
+  opacity: .5
 }
 
 .message-item input:focus,
 .message-item textarea:focus {
   border-color: var(--basic-black);
-  color: var(--basic-black);
+  color: var(--basic-black)
 }
 
 .message-item input:disabled,
 .message-item textarea:disabled {
   border-color: var(--basic-red-dark);
-  color: var(--basic-red-dark);
+  color: var(--basic-red-dark)
 }
 
 .message-form {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-between
 }
 
 .message h2 {
   width: 311px;
   height: 53px;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 45px;
   line-height: 53px;
   margin: 0;
-  margin-bottom: 37px;
+  margin-bottom: 37px
 }
 
 .message .button {
-  padding-top: 17px;
-  padding-right: 83px;
-  padding-bottom: 15px;
-  padding-left: 83px;
   background-color: var(--basic-red);
   color: var(--basic-white);
   font-style: normal;
@@ -1469,16 +1430,17 @@ a {
   text-transform: uppercase;
   border-radius: 3px;
   border: none;
+  padding: 17px 83px 15px
 }
 
 .message .button:hover {
-  background-color: var(--basic-red-dark);
+  background-color: var(--basic-red-dark)
 }
 
 .message .button:active {
   background-color: var(--basic-extra-red);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
-  color: rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+  color: rgba(255, 255, 255, 0.3)
 }
 
 .button-close {
@@ -1491,7 +1453,7 @@ a {
   background: transparent;
   padding: 0;
   margin: 0;
-  border: none;
+  border: none
 }
 
 .button-close::before,
@@ -1503,18 +1465,18 @@ a {
   top: 50%;
   right: 0;
   background: var(--basic-red);
-  opacity: 0.3;
+  opacity: .3
 }
 
 .button-close::before {
-  transform: rotate(-45deg);
+  transform: rotate(-45deg)
 }
 
 .button-close::after {
-  transform: rotate(45deg);
+  transform: rotate(45deg)
 }
 
 .button-close::before:hover,
 .button-close::after:hover {
-  background: var(--basic-red);
+  background: var(--basic-red)
 }
