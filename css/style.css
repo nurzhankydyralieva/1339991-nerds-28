@@ -507,7 +507,7 @@ a {
 }
 
 .slogan-info-table {
-  margin-bottom: 28px;
+  margin-bottom: 30px;
 }
 
 .slogan-table img {
@@ -518,7 +518,7 @@ a {
 }
 
 .slogan-table p {
-  padding-top: 14px;
+  padding-top: 15px;
   padding-left: 20px;
 
 }
@@ -537,11 +537,25 @@ a {
 }
 
 .table th {
+  position: relative;
   font-weight: bold;
   font-size: 45px;
   line-height: 64px;
-  padding-right: 16px;
+  margin: 0;
+  padding: 0;
   padding-bottom: 11px;
+  padding-right: 43px;
+}
+
+.table th::after {
+  content: "";
+  position: absolute;
+  height: 40px;
+  width: 30px;
+  top: 14px;
+  right: 10px;
+  background-image: url(../img/%.png);
+  background-repeat: no-repeat;
 }
 
 .logos {
@@ -564,6 +578,28 @@ a {
 
 }
 
+.logo-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+}
+
+.logo-link:nth-child(4n+1),
+.logo-link:nth-child(4n+4) {
+  width: 280px;
+}
+
+.logo-link-academy img {
+  margin-left: -20px;
+  margin-top: 10px;
+}
+
+.logo-link-mishka img {
+  margin-right: -20px;
+
+}
+
 .logo-link:hover img {
   opacity: 1;
 }
@@ -583,15 +619,15 @@ a {
 }
 
 .logo-link-academy::after {
-  margin-left: 45px;
+  margin-left: 141px;
 }
 
 .logo-link-barbershop::after {
-  margin-left: 28px;
+  margin-left: 152px;
 }
 
 .logo-link-pink::after {
-  margin-left: 35px;
+  margin-left: 152px;
 }
 
 /*catalog*/
@@ -624,8 +660,7 @@ a {
 .filter-item {
   margin: 0;
   margin-top: 55px;
-  padding: 0;
-  border: none;
+
 }
 
 .filters legend {
@@ -699,7 +734,7 @@ a {
   color: var(--basic-darkslategrey);
   text-transform: uppercase;
   justify-content: space-between;
-  margin-bottom: 16px;
+  margin-bottom: 53px;
 }
 
 .price-controls input {
@@ -710,6 +745,11 @@ a {
   border: none;
   border-radius: 3px;
   outline: none;
+
+}
+
+.price-controls .price-min {
+  margin-right: 25px;
 }
 
 .range-controls .toggle-min-price {
@@ -840,6 +880,11 @@ a {
   position: relative;
 }
 
+.filter-breadcrumbs {
+  margin: 0;
+  margin-bottom: 26px;
+}
+
 .filter-radio,
 .filter-checkbox {
   list-style: none;
@@ -847,8 +892,21 @@ a {
   font-style: normal;
   font-size: 16px;
   line-height: 19px;
+  margin: 0;
+}
+
+.breadcrumbs .filter-radio {
   margin-bottom: 14px;
-  width: 172px;
+
+}
+
+.breadcrumbs-field .filter-checkbox {
+  margin-bottom: 13px;
+}
+
+.breadcrumbs-filter-checkbox {
+  margin: 0;
+  width: 260px;
 }
 
 .filter-option label,
@@ -857,7 +915,7 @@ a {
   display: block;
   cursor: pointer;
   user-select: none;
-  padding-left: 40px;
+  padding-left: 35px;
 }
 
 .filter-option-radio label {
@@ -877,15 +935,17 @@ a {
   background-image: url(../img/checkbox-off.svg);
   background-repeat: no-repeat;
   width: 23px;
-  height: 23px;
+  height: 26px;
 }
 
 .filter-checkbox input:checked+label {
   background-image: url(../img/checkbox-on.svg);
+
 }
 
 .filter-option-radio label,
 .filter-option label {
+  width: 225px;
   opacity: 0.6;
 }
 
@@ -899,11 +959,14 @@ a {
   opacity: 0.3;
 }
 
+
+
 .filter fieldset {
   padding: 0;
-  margin-bottom: 33px;
   border: none;
+
 }
+
 
 .filter-input-radio:hover+label,
 .filter-input-checkbox:hover+label {
@@ -922,6 +985,7 @@ a {
   padding-right: 89px;
   padding-bottom: 15px;
   padding-left: 88px;
+  margin-top: 30px;
   color: var(--basic-black);
   text-transform: uppercase;
   font-weight: 500;
