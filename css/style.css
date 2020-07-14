@@ -1468,6 +1468,7 @@ a {
   text-transform: uppercase;
   border-radius: 3px;
   border: none;
+  outline: none;
 }
 
 .message .button:hover {
