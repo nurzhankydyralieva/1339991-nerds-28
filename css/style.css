@@ -554,7 +554,7 @@ a {
   width: 30px;
   top: 14px;
   right: 10px;
-  background-image: url(../img/%.png);
+  background-image: url(../img/per-cent.png);
   background-repeat: no-repeat;
 }
 
@@ -632,13 +632,12 @@ a {
 
 /*catalog*/
 
-
 .page-title {
   width: 100%;
+  margin: 0;
   margin-top: 72px;
   margin-bottom: 108px;
   padding: 0;
-
   background-color: var(--basic-light-grey);
   color: var(--basic-black);
   font-style: normal;
