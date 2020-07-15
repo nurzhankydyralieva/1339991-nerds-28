@@ -1345,7 +1345,7 @@ a {
 }
 
 .message {
-  display: none;
+  
   padding-top: 63px;
   padding-right: 100px;
   padding-bottom: 84px;
@@ -1377,6 +1377,7 @@ a {
   margin-bottom: 34px;
   color: var(--basic-silver-grey);
   box-sizing: border-box;
+  outline: none;
 }
 
 .message-item label,
@@ -1405,22 +1406,23 @@ a {
   padding-top: 16px;
   padding-left: 16px;
   box-sizing: border-box;
+  outline: none;
 }
 
 .message-item input:hover,
-.message-item textarea:hover {
+.message-item-text textarea:hover {
   border-color: var(--basic-grey-focus);
   color: var(--basic-silver-grey);
 }
 
 .message-item input::placeholder,
-.message-item textarea::placeholder {
+.message-item-text textarea::placeholder {
   color: var(--basic-silver-grey);
   opacity: 0.5;
 }
 
 .message-item input:focus,
-.message-item textarea:focus {
+.message-item-text textarea:focus {
   border-color: var(--basic-black);
   color: var(--basic-black);
 }
@@ -1510,4 +1512,8 @@ a {
 .button-close:hover::before,
 .button-close:hover::after {
   opacity: 1;
+}
+.button-close:active::before,
+.button-close:active::after {
+  opacity: 0.1;
 }
