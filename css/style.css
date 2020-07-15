@@ -1345,7 +1345,7 @@ a {
 }
 
 .message {
-  
+  display: none;
   padding-top: 63px;
   padding-right: 100px;
   padding-bottom: 84px;
