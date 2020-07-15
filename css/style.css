@@ -981,7 +981,7 @@ a {
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
-  margin-bottom: 70px;
+  margin-bottom: 60px;
 }
 
 .filter-type h2 {
@@ -1034,7 +1034,7 @@ a {
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0;
-  margin-bottom: 33px;
+  margin-bottom: 21px;
   padding: 0;
 }
 
@@ -1115,7 +1115,8 @@ a {
 }
 
 .nav-buttons {
-  display: inline-block;
+  display: flex;
+  flex-wrap: wrap;
   width: 440px;
   justify-content: space-between;
   margin: 0;
@@ -1123,10 +1124,10 @@ a {
 }
 
 .nav-buttons a {
-  padding-top: 16px;
-  padding-right: 21px;
-  padding-bottom: 15px;
-  padding-left: 19px;
+  padding-top: 14px;
+  padding-right: 17px;
+  padding-bottom: 12px;
+  padding-left: 17px;
   background-color: var(--basic-light-grey);
   border-radius: 3px;
   font-style: normal;
@@ -1134,6 +1135,7 @@ a {
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-black);
+  border: 3px solid var(--basic-light-grey);
 }
 
 .nav-buttons .nav-button-next {
@@ -1160,11 +1162,6 @@ a {
 .nav-buttons .button-page-active {
   background: var(--basic-white);
   border: 3px solid var(--basic-grey-active);
-  padding-right: 19px;
-  padding-top: 12px;
-  padding-bottom: 11px;
-  padding-left: 15px;
-  margin-right: 9px;
 }
 
 .nav-buttons .nav-button-previous {
