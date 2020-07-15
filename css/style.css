@@ -796,6 +796,7 @@ a {
   width: 11px;
   height: 10px;
   top: 4px;
+  
 }
 
 .filter-difference .decrease {
@@ -808,9 +809,9 @@ a {
   left: 348px;
 }
 
-.decrease,
-.increase {
-  opacity: 0.3;
+.decrease:active,
+.increase:active {
+  opacity: 1;
 }
 
 .decrease:hover,
@@ -818,11 +819,12 @@ a {
   opacity: 0.6;
 }
 
-.decrease:active,
-.increase:active {
+.decrease-active{
   opacity: 1;
 }
-
+.increase-active {
+  opacity: 0.3;
+}
 .filte-type .increase {
   padding-left: 18px;
 }
