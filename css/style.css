@@ -42,7 +42,7 @@ body {
   min-width: 1200px;
   margin: 0;
   padding: 0;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -225,20 +225,23 @@ a {
   color: var(--basic-black);
 }
 
-.feature-item-active {
-  display: flex;
-}
-
 .feature-item {
   display: none;
-  width: 380px;
-  margin: 0;
+  position: relative;
+}
+
+.feature-item-active {
+  display: block;
 }
 
 .feature-img {
-  position: relative;
+  position: absolute;
+  left: 398px;
   width: 760px;
   height: 400px;
+  width: 100%;
+  height: 100%;
+
 }
 
 .feature-text {
@@ -255,6 +258,7 @@ a {
 }
 
 .feature-wrapper {
+  position: absolute;
   width: 538px;
 }
 
@@ -289,7 +293,7 @@ a {
 .slider-buttons {
   display: flex;
   position: relative;
-  bottom: 83px;
+  top: 317px;
   width: 88px;
   justify-content: space-between;
   transform: translateX(-50%);
@@ -535,7 +539,9 @@ a {
   background-image: url("../img/per-cent.png");
   background-repeat: no-repeat;
 }
-
+.table th:nth-child(3n+3)::after{
+  width: 57px;
+}
 .logos {
   display: flex;
   min-height: 180px;
@@ -1261,7 +1267,7 @@ a {
   line-height: 22px;
 }
 .address .tel{
-  color: var(--basic-grey-contact);
+color: var(--basic-grey-contact);
  text-transform: none;
 }
 .map {
