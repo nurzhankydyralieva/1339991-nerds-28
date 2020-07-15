@@ -201,9 +201,11 @@ a {
 
 .features {
   width: 100%;
-  height: 430px;
+  min-height: 430px;
+  padding: 0;
+  margin: 0;
   margin-bottom: 80px;
-  background-color: var(--basic-light-grey);
+  background-color: var(--basic-light-grey); 
 }
 
 .feature-slider {
@@ -214,7 +216,6 @@ a {
 }
 
 .feature-slider .feature-title {
-  width: 380px;
   font-style: normal;
   font-weight: 500;
   font-size: 55px;
@@ -235,9 +236,9 @@ a {
 }
 
 .feature-img {
-  flex-shrink: 0;
+  position: relative;
   width: 760px;
-  height: 430px;
+  height: 400px;
 }
 
 .feature-text {
@@ -248,13 +249,13 @@ a {
   line-height: 24px;
   margin: 0;
   margin-bottom: 38px;
-  margin-top: 26px;
+  margin-top: 28px;
   margin-left: 1px;
   color: var(--basic-darkslategrey);
 }
 
 .feature-wrapper {
-  margin-right: -4px;
+  width: 538px;
 }
 
 .button {
@@ -288,7 +289,7 @@ a {
 .slider-buttons {
   display: flex;
   position: relative;
-  bottom: 114px;
+  bottom: 83px;
   width: 88px;
   justify-content: space-between;
   transform: translateX(-50%);
@@ -483,7 +484,7 @@ a {
   line-height: 24px;
   text-transform: uppercase;
   color: var(--basic-black);
-  margin-bottom: 23px;
+  margin-bottom: 24px;
 }
 
 .slogan-info-table {
@@ -565,11 +566,12 @@ a {
 
 .logo-link-academy img {
   margin-left: -20px;
-  margin-top: 10px;
+  margin-top: 17px;
 }
 
 .logo-link-mishka img {
   margin-right: -20px;
+  margin-top: 10px;
 }
 
 .logo-link:hover img {
@@ -954,6 +956,9 @@ a {
   color: var(--basic-black);
   text-transform: uppercase;
   font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 18px;
   border: none;
   border-radius: 3px;
   outline: none;
@@ -1300,7 +1305,7 @@ a {
   font-size: 18px;
   line-height: 30px;
   margin: 0;
-  margin-bottom: 23px;
+  margin-bottom: 22px;
   padding: 0;
   text-align: start;
   color: var(--basic-black);
@@ -1315,7 +1320,7 @@ a {
   font-size: 16px;
   line-height: 18px;
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 52px;
   color: var(--basic-grey-contact);
 }
 
