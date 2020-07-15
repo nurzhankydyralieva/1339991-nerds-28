@@ -1124,7 +1124,7 @@ a {
 
 .button-page {
   display: block;
-  min-height: 50px;
+  min-width: 50px;
   padding-top: 16px;
   padding-right: 17px;
   padding-bottom: 16px;
