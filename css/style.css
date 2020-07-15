@@ -1147,20 +1147,32 @@ a {
 }
 
 .button-page:hover {
-  background: var(--basic-extra-grey);
+  background: var(--basic-dark-grey);
+}
+
+.button-page:active {
+  background-color: var(--basic-extra-grey);
   box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
   color: rgba(0, 0, 0, 0.3);
 }
-.button-page-active{
+
+.button-page-active {
   background-color: var(--basic-white);
   border: 3px solid var(--basic-grey-active);
   padding: 13px 14px;
 }
-.button-page-active:active{
+
+.button-page-active:hover {
+  background-color: var(--basic-dark-grey);
+  border-color: var(--basic-dark-grey);
+}
+
+.button-page-active:active {
   background-color: var(--basic-extra-grey);
   border: none;
   padding: 16px 17px;
 }
+
 .nav-button-previous {
   display: none;
 }
