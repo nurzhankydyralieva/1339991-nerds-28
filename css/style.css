@@ -981,7 +981,7 @@ a {
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
-  margin-bottom: 60px;
+  margin-bottom: 70px;
 }
 
 .filter-type h2 {
@@ -1034,7 +1034,7 @@ a {
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0;
-  margin-bottom: 21px;
+  margin-bottom: 33px;
   padding: 0;
 }
 
@@ -1057,14 +1057,13 @@ a {
 }
 
 .catalog-info .button {
-  display: block;
+  display: inline-block;
   color: var(--basic-white);
   background-color: var(--basic-red);
-  padding-top: 17px;
-  padding-right: 72px;
-  padding-bottom: 15px;
-  padding-left: 72px;
-  margin-left: 80px;
+  margin: 0;
+  min-width: 93px;
+  padding-right: 54px;
+  padding-top: 16px;
 }
 
 .catalog-info .button:hover {
@@ -1116,8 +1115,7 @@ a {
 }
 
 .nav-buttons {
-  display: flex;
-  flex-wrap: wrap;
+  display: inline-block;
   width: 440px;
   justify-content: space-between;
   margin: 0;
@@ -1125,10 +1123,10 @@ a {
 }
 
 .nav-buttons a {
-  padding-top: 14px;
-  padding-right: 17px;
-  padding-bottom: 12px;
-  padding-left: 17px;
+  padding-top: 16px;
+  padding-right: 21px;
+  padding-bottom: 15px;
+  padding-left: 19px;
   background-color: var(--basic-light-grey);
   border-radius: 3px;
   font-style: normal;
@@ -1136,7 +1134,6 @@ a {
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-black);
-  border: 3px solid var(--basic-light-grey);
 }
 
 .nav-buttons .nav-button-next {
@@ -1149,7 +1146,7 @@ a {
 .nav-buttons a:hover,
 .nav-button-next a:hover,
 .nav-button-previous a:hover {
-  background-color: var(--basic-dark-grey);
+  background: var(--basic-dark-grey);
 }
 
 .nav-buttons a:active,
@@ -1163,6 +1160,11 @@ a {
 .nav-buttons .button-page-active {
   background: var(--basic-white);
   border: 3px solid var(--basic-grey-active);
+  padding-right: 19px;
+  padding-top: 12px;
+  padding-bottom: 11px;
+  padding-left: 15px;
+  margin-right: 9px;
 }
 
 .nav-buttons .nav-button-previous {
