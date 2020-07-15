@@ -346,7 +346,6 @@ a {
 .service-item-app h3,
 .service-item-presentation h3 {
   width: 138px;
-  height: 30px;
   font-size: 24px;
   line-height: 30px;
   font-style: normal;
@@ -1123,10 +1122,12 @@ a {
   padding: 0;
 }
 
-.nav-buttons a {
-  padding-top: 14px;
+.button-page {
+  display: block;
+  min-height: 50px;
+  padding-top: 16px;
   padding-right: 17px;
-  padding-bottom: 12px;
+  padding-bottom: 16px;
   padding-left: 17px;
   background-color: var(--basic-light-grey);
   border-radius: 3px;
@@ -1135,39 +1136,34 @@ a {
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-black);
-  border: 3px solid var(--basic-light-grey);
+  text-align: center;
+  box-sizing: border-box;
 }
 
-.nav-buttons .nav-button-next {
-  padding-top: 14px;
-  padding-right: 72px;
-  padding-bottom: 12px;
-  padding-left: 75px;
+.nav-button-next {
+  padding-right: 50px;
+  padding-left: 50px;
+  min-width: 260px;
 }
 
-.nav-buttons a:hover,
-.nav-button-next a:hover,
-.nav-button-previous a:hover {
-  background: var(--basic-dark-grey);
-}
-
-.nav-buttons a:active,
-.nav-button-next a:active,
-.nav-button-previous a:active {
-  background-color: var(--basic-extra-grey);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+.button-page:hover {
+  background: var(--basic-extra-grey);
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
   color: rgba(0, 0, 0, 0.3);
 }
-
-.nav-buttons .button-page-active {
-  background: var(--basic-white);
+.button-page-active{
+  background-color: var(--basic-white);
   border: 3px solid var(--basic-grey-active);
+  padding: 13px 14px;
 }
-
-.nav-buttons .nav-button-previous {
+.button-page-active:active{
+  background-color: var(--basic-extra-grey);
+  border: none;
+  padding: 16px 17px;
+}
+.nav-button-previous {
   display: none;
 }
-
 .main-footer .container {
   display: grid;
   grid-template-columns: 261px 660px 1fr;
@@ -1240,7 +1236,6 @@ a {
 
 .advertisement h2 {
   width: 660px;
-  height: 36px;
   margin: 0;
   margin-bottom: 10px;
   margin-top: 7px;
@@ -1252,8 +1247,6 @@ a {
 }
 
 .advertisement p {
-  width: 373px;
-  height: 22px;
   margin: 0;
   color: var(--basic-silver-grey);
   font-weight: normal;
@@ -1262,7 +1255,7 @@ a {
   line-height: 22px;
 }
 .address .tel{
-color: var(--basic-grey-contact);
+ color: var(--basic-grey-contact);
  text-transform: none;
 }
 .map {
